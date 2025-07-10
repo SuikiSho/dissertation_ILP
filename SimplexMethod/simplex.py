@@ -15,24 +15,28 @@ class Simplex:
     and b_ub is the right-hand side vector for the inequality constraints.
     The solution will return the optimal values of the variables and the optimal value of the objective function
     """
-    def __init__(self, c, A_ub, b_ub):
+    def __init__(self, c=None, A_ub=None, b_ub=None, tableau=None, basic_index=None):
         self.c = c
         self.A_ub = A_ub
         self.b_ub = b_ub
-        self.num_vars = len(c)
-        self.num_constraints = A_ub.shape[0]
-        self.tableau = None
-        self.basic_index = None
-        
+        self.tableau = tableau
+        self.basic_index = basic_index
+
     def _construct_tableau(self):
+        # If tableau is already provided, skip construction
+        if self.tableau is not None:
+            return
+
         # Create tableau with slack variables
-        tableau = np.zeros((self.num_constraints + 1, self.num_vars + self.num_constraints + 1))
-        tableau[0, 0:self.num_vars] = -self.c        # Objective function coefficients
-        tableau[1:, 0:self.num_vars] = self.A_ub     # Coefficients of constraints
-        tableau[1:, self.num_vars:self.num_vars + self.num_constraints] = np.eye(self.num_constraints)  # Slack variables
+        num_vars = len(self.c)
+        num_constraints = self.A_ub.shape[0]
+        tableau = np.zeros((num_constraints + 1, num_vars + num_constraints + 1))
+        tableau[0, 0:num_vars] = -self.c        # Objective function coefficients
+        tableau[1:, 0:num_vars] = self.A_ub     # Coefficients of constraints
+        tableau[1:, num_vars:num_vars + num_constraints] = np.eye(num_constraints)  # Slack variables
         tableau[1:, -1] = self.b_ub                  # Right-hand side values
         self.tableau = tableau
-        self.basic_index = np.arange(self.num_vars, self.num_vars + self.num_constraints)
+        self.basic_index = np.arange(num_vars, num_vars + num_constraints)
 
     def _is_optimal(self):
         # Check if the tableau is optimal (no negative coefficients in the first row)
@@ -112,6 +116,7 @@ class TwoPhaseSimplex(Simplex):
         super().__init__(c, A_ub, b_ub)
         self.A_eq = A_eq
         self.b_eq = b_eq
+        self.num_vars = len(c)
         self.num_constraints = A_ub.shape[0] + A_eq.shape[0]
         self.art_index = None
 
@@ -213,7 +218,83 @@ class TwoPhaseSimplex(Simplex):
         return optimal_solution, optimal_value
 
 
+class DualSimplex(Simplex):
+    """
+    Dual Simplex Algorithm for solving linear programming problems.
+    This class implements the dual simplex algorithm to find the optimal solution
+    for a given linear programming problem defined by the tableau and basic variable indices.
+    """
+    def __init__(self, tableau=None, basic_index=None):
+        super().__init__()
+        self.tableau = tableau
+        self.basic_index = basic_index
+
+    def _is_feasible(self):
+        # Check if all basic variables are non-negative
+        return np.all(self.tableau[1:, -1] >= 0)
+    
+    def _ratio_test(self, nume, deno):
+        # Perform ratio test for dual simplex
+        ratios = np.full_like(nume, np.inf, dtype=float)
+        mask = deno < 0
+        ratios[mask] = -nume[mask] / deno[mask]
+        ratios[ratios < 0] = np.inf  # Ignore non-positive ratios
+        return ratios
+
+    def _get_pivot(self):
+        # Select pivot row
+        rhs = self.tableau[1:, -1]
+        pivot_row = np.argmin(rhs) + 1
+        if np.all(self.tableau[pivot_row, :-1] >= 0):
+            raise ValueError("Problem is infeasible.")
+        
+        # Select pivot column
+        nume = self.tableau[0, :-1]                 # C_j - Z_j
+        deno = self.tableau[pivot_row, :-1]         # Leaving basic variable row
+        ratios = self._ratio_test(nume, deno)
+        pivot_col = np.argmin(ratios)
+
+        # Update basic variable index
+        self.basic_index[pivot_row - 1] = pivot_col
+
+        return pivot_row, pivot_col
+    
+    def solve(self):
+        # Construct the initial tableau
+        self._construct_tableau()
+
+        ### log
+        print("Initial tableau:\n", self.tableau)
+
+        # Perform the dual simplex algorithm
+        while not self._is_feasible():
+            pivot_row, pivot_col = self._get_pivot()
+            self._pivot(pivot_row, pivot_col)
+            ### log
+            print("Tableau:\n", self.tableau)
+            print("Basic index:", self.basic_index)
+            print("Pivot row:", pivot_row, "Pivot column:", pivot_col)
+
+        # Check for optimality
+        while not self._is_optimal():
+            pivot_row, pivot_col = super()._get_pivot()
+            self._pivot(pivot_row, pivot_col)
+        
+        # Extract the optimal solution and value
+        rhs = self.tableau[1:, -1]
+        optimal_value = self.tableau[0, -1]
+        optimal_solution = np.zeros(self.tableau.shape[1] - 1)
+
+        for i, idx in enumerate(self.basic_index):
+            optimal_solution[idx] = rhs[i]
+
+        return optimal_solution, optimal_value
+
+
 if __name__ == "__main__":
+    # Set numpy print options for better readability
+    np.set_printoptions(precision=3, suppress=True)
+
     # Example usage
     c = np.array([3, 2])
     A_ub = np.array([[1, 1], [2, 1], [1, 0]])
@@ -234,3 +315,16 @@ if __name__ == "__main__":
     print("Two-phase optimal solution:", solution)
     print("Two-phase optimal value:", value)
     print("Two-phase final tableau:\n", two_phase_simplex.tableau)
+
+    # Dual simplex example
+    tableau = np.array([[1, 2, 0, 0, 0, 0],
+                        [2, 1, 1, 0, 0, 4],
+                        [1, 0, 0, 1, 0, 2],
+                        [-3, -2, 0, 0, 1, -1]], dtype=float)
+    basic_index = np.array([2, 3, 4])
+
+    dual_simplex = DualSimplex(tableau, basic_index)
+    solution, value = dual_simplex.solve()
+    print("Dual simplex optimal solution:", solution)
+    print("Dual simplex optimal value:", value)
+    print("Dual simplex final tableau:\n", dual_simplex.tableau)
