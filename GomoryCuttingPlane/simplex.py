@@ -1,3 +1,5 @@
+# Same as simplex.py in SimplexMethod
+
 import numpy as np
 
 class Simplex:
