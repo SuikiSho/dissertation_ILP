@@ -15,7 +15,7 @@ class Simplex:
     and b_ub is the right-hand side vector for the inequality constraints.
     The solution will return the optimal values of the variables and the optimal value of the objective function
     """
-    def __init__(self, c=None, A_ub=None, b_ub=None, tableau=None, basic_index=None):
+    def __init__(self, c, A_ub, b_ub, tableau=None, basic_index=None):
         self.c = c
         self.A_ub = A_ub
         self.b_ub = b_ub
@@ -112,8 +112,8 @@ class TwoPhaseSimplex(Simplex):
     The solution will return the optimal values of the variables and the optimal value of the objective function
     if the problem is feasible.
     """
-    def __init__(self, c, A_ub, b_ub, A_eq=None, b_eq=None):
-        super().__init__(c, A_ub, b_ub)
+    def __init__(self, c, A_ub, b_ub, A_eq=None, b_eq=None, tableau=None, basic_index=None):
+        super().__init__(c, A_ub, b_ub, tableau, basic_index)
         self.A_eq = A_eq
         self.b_eq = b_eq
         self.num_vars = len(c)
@@ -224,10 +224,8 @@ class DualSimplex(Simplex):
     This class implements the dual simplex algorithm to find the optimal solution
     for a given linear programming problem defined by the tableau and basic variable indices.
     """
-    def __init__(self, tableau=None, basic_index=None):
-        super().__init__()
-        self.tableau = tableau
-        self.basic_index = basic_index
+    def __init__(self, c, A_ub, b_ub, tableau=None, basic_index=None):
+        super().__init__(c, A_ub, b_ub, tableau, basic_index)
 
     def _is_feasible(self):
         # Check if all basic variables are non-negative
@@ -252,6 +250,8 @@ class DualSimplex(Simplex):
         nume = self.tableau[0, :-1]                 # C_j - Z_j
         deno = self.tableau[pivot_row, :-1]         # Leaving basic variable row
         ratios = self._ratio_test(nume, deno)
+        if np.all(ratios == np.inf):
+            raise ValueError("Problem is unbounded.")
         pivot_col = np.argmin(ratios)
 
         # Update basic variable index
@@ -263,17 +263,10 @@ class DualSimplex(Simplex):
         # Construct the initial tableau
         self._construct_tableau()
 
-        ### log
-        print("Initial tableau:\n", self.tableau)
-
         # Perform the dual simplex algorithm
         while not self._is_feasible():
             pivot_row, pivot_col = self._get_pivot()
             self._pivot(pivot_row, pivot_col)
-            ### log
-            print("Tableau:\n", self.tableau)
-            print("Basic index:", self.basic_index)
-            print("Pivot row:", pivot_row, "Pivot column:", pivot_col)
 
         # Check for optimality
         while not self._is_optimal():
@@ -323,7 +316,7 @@ if __name__ == "__main__":
                         [-3, -2, 0, 0, 1, -1]], dtype=float)
     basic_index = np.array([2, 3, 4])
 
-    dual_simplex = DualSimplex(tableau, basic_index)
+    dual_simplex = DualSimplex(None, None, None, tableau=tableau, basic_index=basic_index)
     solution, value = dual_simplex.solve()
     print("Dual simplex optimal solution:", solution)
     print("Dual simplex optimal value:", value)
