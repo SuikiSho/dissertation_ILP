@@ -24,7 +24,9 @@ class GomoryCuttingPlane(Simplex):
     def _is_integer(self):
         # Check if all basic variables are integers
         rhs = self.tableau[1:, -1]
-        return np.all(np.isclose(rhs, np.round(rhs), atol=TOL))
+        idx = self.basic_index
+        decs = rhs[idx < len(self.c)]
+        return np.all(np.isclose(decs, np.round(decs), atol=TOL))
 
     def solve_lp_relaxation(self):
         # Solve the linear programming relaxation of the integer program.
@@ -50,12 +52,19 @@ class GomoryCuttingPlane(Simplex):
         for i, b in enumerate(rhs):
             if not np.isclose(b, np.round(b), atol=TOL):
                 cut_row_idx = i + 1  # +1 because the first row is the objective function
-                break
+                break 
             
         # Extract the coefficients of the cutting plane
         row = self.tableau[cut_row_idx, :]
-        cut_coeffs = -self.frac_part(row[:-1])
-        cut_rhs = -self.frac_part(row[-1])
+        cut_coeffs = np.zeros(len(row) - 1)
+        
+        # C-G cutting plane
+        if np.all(np.isclose(row[:-1], np.round(row[:-1]), atol=TOL)):
+            cut_coeffs[:len(self.c)] = row[:len(self.c)]
+            cut_rhs = np.floor(row[-1])
+        else:
+            cut_coeffs = -self.frac_part(row[:-1])
+            cut_rhs = -self.frac_part(row[-1])
 
         # Create a new tableau
         tableau = np.zeros((self.tableau.shape[0] + 1, self.tableau.shape[1] + 1))
@@ -64,6 +73,12 @@ class GomoryCuttingPlane(Simplex):
         tableau[-1, :-2] = cut_coeffs
         tableau[-1, -1] = cut_rhs
         tableau[-1, -2] = 1
+
+        # recover basic matrix
+        basic_rec = Simplex(None, None, None, tableau=tableau, basic_index=self.basic_index)
+        basic_rec._pivot(cut_row_idx, self.basic_index[cut_row_idx - 1])
+        tableau = basic_rec.tableau
+
         self.tableau = tableau
         self.basic_index = np.append(self.basic_index, len(row) - 1)  # Add the new basic variable index
 

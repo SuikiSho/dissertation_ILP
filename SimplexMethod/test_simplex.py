@@ -220,6 +220,25 @@ def _test12():
     except Exception as e:
         print("Error:", e)
 
+# Test for Minimize Problem
+def _test13():
+    """
+    Minimize: c = x1 + 2x2
+    Subject to: x1 + x2 <= 4
+                2x1 + x2 <= 6
+    x1, x2 are integers
+    """
+    c = np.array([-1, -2])
+    A_ub = np.array([[1, 1], [2, 1]])
+    b_ub = np.array([4, 6])
+
+    simplex = Simplex(c=c, A_ub=A_ub, b_ub=b_ub)
+    value, solution = simplex.solve()
+
+    print("Optimal solution:", solution)
+    print("Optimal value:", value)
+    print("Final tableau:\n", simplex.tableau)
+
 
 if __name__ == "__main__":
     # print("Running Simplex tests...")
@@ -232,10 +251,13 @@ if __name__ == "__main__":
     # _test5()
     # _test6()
 
-    print("\nRunning Dual Simplex test...")
-    _test7()
-    _test8()
-    _test9()
-    _test10()
-    _test11()
-    _test12()
+    # print("\nRunning Dual Simplex test...")
+    # _test7()
+    # _test8()
+    # _test9()
+    # _test10()
+    # _test11()
+    # _test12()
+
+    print("\nRunning Minimize Problem test...")
+    _test13()

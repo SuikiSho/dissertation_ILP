@@ -117,7 +117,6 @@ class TwoPhaseSimplex(Simplex):
         self.A_eq = A_eq
         self.b_eq = b_eq
         self.num_vars = len(c)
-        self.num_constraints = A_ub.shape[0] + A_eq.shape[0] if A_eq is not None else A_ub.shape[0]
         self.art_index = None
 
     def _construct_tableau(self):
@@ -134,15 +133,17 @@ class TwoPhaseSimplex(Simplex):
 
         # Number of variables and constraints
         num_vars = self.num_vars
-        num_ub = self.A_ub.shape[0]
+        num_ub = self.A_ub.shape[0] if self.A_ub is not None else 0
         num_eq = self.A_eq.shape[0]
         num_constraints = num_ub + num_eq
 
         # Create tableau with slack and artificial variables
+        A = np.vstack((self.A_ub, self.A_eq)) if self.A_ub is not None else self.A_eq
+        b = np.hstack((self.b_ub, self.b_eq)) if self.b_ub is not None else self.b_eq
         tableau = np.zeros((num_constraints + 1, num_vars + num_constraints + 1))
-        tableau[1:, 0:num_vars] = np.vstack((self.A_ub, self.A_eq))                 # Coefficients of constraints
+        tableau[1:, 0:num_vars] = A                                                 # Coefficients of constraints
+        tableau[1:, -1] = b                                                         # Right-hand side values    
         tableau[1:, num_vars:num_vars + num_constraints] = np.eye(num_constraints)  # Slack variables and artificial variables
-        tableau[1:, -1] = np.hstack((self.b_ub, self.b_eq))                         # Right-hand side values    
         tableau[0, :] = -np.sum(tableau[num_ub + 1:, :], axis=0)                    # Objective function coefficients
         self.basic_index = np.arange(num_vars, num_vars + num_constraints)
         self.art_index = np.arange(num_vars + num_ub, num_vars + num_constraints)
@@ -162,7 +163,7 @@ class TwoPhaseSimplex(Simplex):
     # Construct the tableau for phase 2
     def _construct_phase2_tableau(self):
         # Remove artificial variables from the tableau
-        A = self.tableau[1:, 0:self.num_vars + self.A_ub.shape[0]]
+        A = self.tableau[1:, 0:self.num_vars + self.A_ub.shape[0]] if self.A_ub is not None else self.tableau[1:, 0:self.num_vars]
         b = self.tableau[1:, -1]
         c = self.c
 
