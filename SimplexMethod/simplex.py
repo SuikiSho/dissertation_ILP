@@ -1,3 +1,7 @@
+# Simplex containing prime simplex method, two phase simplex and dual simplex method
+# Author: Ricky Jiao
+# Date: 2025-06-19
+
 import numpy as np
 
 class Simplex:
