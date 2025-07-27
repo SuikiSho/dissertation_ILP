@@ -12,9 +12,9 @@ class BnBTreeNode(object):
     x_b     : float, 分支定界法里新增条件的右端常数
 
     res_x   : numpy array, 分支定界法里这一步的松弛解
-    res_fun : float，      分支定界法里这一步的目标函数值
+    res_fun : float,      分支定界法里这一步的目标函数值
 
-    sub_flag: bool, 若节点为*整颗BnBTree*的根节点则为 False，否则 True
+    sub_flag: bool, 若节点为*整颗BnBTree*的根节点则为 False, 否则 True
     """
 
     def __init__(self):
