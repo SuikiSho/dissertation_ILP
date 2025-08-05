@@ -1,5 +1,5 @@
 import numpy as np
-from simplex import Simplex, TwoPhaseSimplex, DualSimplex
+from .simplex import Simplex, TwoPhaseSimplex, DualSimplex
 
 TOL = 1e-10 # Tolerance for floating-point comparisons
 
@@ -87,8 +87,8 @@ class GomoryCuttingPlane(Simplex):
         self.solve_lp_relaxation()
 
         ### log
-        print("Initial tableau:\n", self.tableau)
-        print("Basic variables:", self.basic_index)
+        # print("Initial tableau:\n", self.tableau)
+        # print("Basic variables:", self.basic_index)
 
         # Step 2: Make solution integer
         while not self._is_integer():
@@ -96,15 +96,15 @@ class GomoryCuttingPlane(Simplex):
             self.add_cutting_plane()
 
             ### log
-            print("Tableau after adding cutting plane:\n", self.tableau)
-            print("Basic variables:", self.basic_index)
+            # print("Tableau after adding cutting plane:\n", self.tableau)
+            # print("Basic variables:", self.basic_index)
 
             # Step 2b: Make the tableau feasible using dual simplex
             self.solve_with_dual_simplex()
 
             ### log
-            print("Tableau after dual simplex:\n", self.tableau)
-            print("Basic variables:", self.basic_index)
+            # print("Tableau after dual simplex:\n", self.tableau)
+            # print("Basic variables:", self.basic_index)
 
         # Step 3: Extract the solution
         rhs = self.tableau[1:, -1]

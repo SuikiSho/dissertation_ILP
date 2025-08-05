@@ -41,7 +41,7 @@ class SheraliAdams:
         self.constraints_eq = []
         self._matrix_to_Constraints(A_ub, b_ub, A_eq, b_eq)
 
-    def _is_integral(self, x):
+    def _is_int(self, x):
         return np.all(np.isclose(x, np.round(x), atol=TOL))
 
     def _matrix_to_Constraints(self, A_ub, b_ub, A_eq, b_eq):
@@ -208,13 +208,13 @@ class SheraliAdams:
 
             # for debugging
             print(f"Current level: {level}")
-            print(f"Current LP solution: {sol}")
-            print(f"Current LP objective: {obj}")
+            # print(f"Current LP solution: {sol}")
+            # print(f"Current LP objective: {obj}")
 
             if sol is None:
                 print("LP infeasible or error. Terminating.")
                 return None, None
-            if self._is_integral(sol):
+            if self._is_int(sol):
                 print(f"Integral solution found at level {level}.")
                 return sol[:size], obj
             if level >= max_l:

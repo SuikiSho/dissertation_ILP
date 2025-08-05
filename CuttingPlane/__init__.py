@@ -1,2 +1,2 @@
-from simplex import Simplex, TwoPhaseSimplex, DualSimplex
-from gomory import GomoryCuttingPlane
+from .simplex import Simplex, TwoPhaseSimplex, DualSimplex
+from .gomory import GomoryCuttingPlane

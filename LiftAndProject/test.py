@@ -155,12 +155,36 @@ def _test5():
     opt_sol, opt_val = model.solve()
     print(f"Optimal solution: {opt_sol: }; Optimal objective: {opt_val}")
 
+def _test6():
+    A_ub = np.array([[1,0,0,1,0,0],
+                    [-1,0,0,0,0,0],
+                    [1,-1,0,0,0,0],
+                    [-1,1,1,0,0,0],
+                    [0,-1,0,1,0,0],
+                    [1,0,-1,0,0,0],
+                    [0,1,1,-1,0,0],
+                    [0,0,-1,1,0,0],
+                    [0,0,0,-1,0,0],
+                    [-1,0,0,0,-1,0],
+                    [0,-1,0,0,1,0],
+                    [0,0,-1,0,0,-1],
+                    [0,0,0,-1,0,1]])
+    b_ub = np.array([0,1,1,1,1,1,1,1,1,-1,0,-1,0])
+    num_vars = A_ub.shape[1]
+    c = np.array([0]*num_vars)
+
+    model = SheraliAdams(c, A_ub, b_ub)
+    model.print_status()
+
+    opt_sol, opt_val = model.solve()
+    print(f"Optimal solution: {opt_sol: }; Optimal objective: {opt_val}")
 
 if __name__ == "__main__":
     np.set_printoptions(precision=5, suppress=True)
 
-    _test1()
-    _test2()
-    _test3()
+    # _test1()
+    # _test2()
+    # _test3()
     # _test4()
     # _test5()
+    _test6()
