@@ -1,203 +1,143 @@
-import math
 import numpy as np
-from scipy import optimize
+from scipy.optimize import linprog
 
-from .bnb_Tree import BnBTree, BnBTreeNode
-
-# epsilon 是算法中判断「零」的临界值，绝对值小于该值的数认为是0
 _epsilon = 1e-8
 
-# 全局变量，用于记录当前的最优解
-best_solution = {"success": False, "x": None, "fun": float("inf")}
-
-def _is_int(n) -> bool:
+class BnBTreeNode:
     """
-    is_int 是判断给定数字 n 是否为整数，
-    在判断中 n 小于epsilon的小数部分将被忽略，
-    是则返回 True，否则 False
 
-    :param n: 待判断的数字
-    :return: True if n is A_ub integer, False else
     """
-    return (n - math.floor(n) < _epsilon) or (math.ceil(n) - n < _epsilon)
+    def __init__(self, parent=None, x=None, fun=None):
+        self.parent = parent
+        self.x = x
+        self.fun = fun
 
+        self.left = None
+        self.right = None
+        self.pruned = False
 
-def branch_and_bound(c, A_ub, b_ub, A_eq, b_eq, bounds, bnbTreeNode=None, enable_pruning=False):
-    """
-    branch_and_bound 对整数规划问题使用「分支定界法」进行*递归*求解。
-    增加了剪枝操作，通过 enable_pruning 参数控制是否启用剪枝。
-
-    底层对松弛问题求解使用 scipy.optimize.linprog 完成，
-    该算法只是在 scipy.optimize.linprog 求解的基础上加以整数约束，
-    所以求解问题的模型、参数中的 c, A_ub, b_ub, A_eq, b_eq, bounds
-    与 scipy.optimize.linprog 的完全相同。
-
-    问题模型：
-        Minimize:     c^T * x
+    def __repr__(self):
+        return f"BnBTreeNode(x={self.x}, fun={self.fun}, pruned={self.pruned})"
     
-        Subject to:   A_ub * x <= b_ub
-                      A_eq * x == b_eq
-                      (x are integers)
+    def print_tree(self, level=0):
+        indent = "  " * level
+        print(f"{indent}Node: {self}")
+        if self.left:
+            print(f"{indent}Left:")
+            self.left.print_tree(level + 1)
+        if self.right:
+            print(f"{indent}Right:")
+            self.right.print_tree(level + 1)
+        if self.pruned:
+            print(f"{indent}Pruned")
 
-    你可以提供一个 BnBTreeNode 实例作为根节点来记录求解过程，得到一个求解过程的树形图。
-    如果需要这样的求解过程的树形图，你可以这样调用 branch_and_bound：
-        c = [-40, -90]
-        A_ub = [[9, 7], [7, 20]]
-        b_ub = [56, 70]
-        bounds = [(0, None), (0, None)]
-        tree = BnBTree()
-        r = branch_and_bound(c, A_ub, b_ub, None, None, bounds, tree.root)
-        print(r)    # 打印求解结果
-        print(tree) # 打印求解过程的树形图
 
-    Parameters
-    ----------
-    :param c: 系数矩阵。array_like
-        Coefficients of the linear objective function to be minimized.
-    :param A_ub: 不等式约束条件矩阵，array_like, 若无则需要传入 None
-        2-D array which, when matrix-multiplied by ``x``, gives the values of
-        the upper-bound inequality constraints at ``x``.
-    :param b_ub: 不等式约束条件右端常数，array_like, 若无则需要传入 None
-        1-D array of values representing the upper-bound of each inequality
-        constraint (row) in ``A_ub``.
-    :param A_eq: 等式约束条件矩阵，array_like, 若无则需要传入 None
-        2-D array which, when matrix-multiplied by ``x``, gives the values of
-        the equality constraints at ``x``.
-    :param b_eq: 等式约束条件右端常数，array_like, 若无则需要传入 None
-        1-D array of values representing the RHS of each equality constraint
-        (row) in ``A_eq``.
-    :param bounds: 变量取值范围，sequence
-        ``(min, max)`` pairs for each element in ``x``, defining
-        the bounds on that parameter. Use None for one of ``min`` or
-        ``max`` when there is no bound in that direction. By default
-        bounds are ``(0, None)`` (non-negative)
-        If a sequence containing a single tuple is provided, then ``min`` and
-        ``max`` will be applied to all variables in the problem.
-    :param bnbTreeNode: 该步的 bnbTreeNode
-        提供一个 BnBTreeNode 实例作为根节点来记录求解过程，得到一个求解过程的树形图。
-    :param enable_pruning: 是否启用剪枝操作，默认为 False
-        如果启用剪枝，则会在子问题的目标值不优于当前最优解时提前停止搜索。
-
-    Returns
-    -------
-    :return: {"success": True|False, "x": array([...]), "fun": ...}
-                - success: 若求解成功则返回 True，否则 False
-                - x: 最优解
-                - fun: 最优目标函数值
+class BranchAndBound:
     """
+    
+    """
+    def __init__(self, c, A_ub, b_ub, A_eq=None, b_eq=None):
+        self.c = c              # default: maximize c^T x
+        self.A_ub = A_ub
+        self.b_ub = b_ub
+        self.A_eq = A_eq
+        self.b_eq = b_eq
 
-    global best_solution
+        self.BnBTree = None
+        self.best_val = float('-inf')
+        self.best_sol = None
 
-    # 对松弛问题求解
-    r = optimize.linprog(c, A_ub, b_ub, A_eq, b_eq, bounds)
+    @staticmethod
+    def _is_int(x):
+        """
+        Check if all elements in x are integers.
+        """
+        return np.all(np.isclose(x, np.round(x), rtol=0, atol=_epsilon))
+    
+    def _solve_rlp(self, A_ub, b_ub):
+        """
+        Solve the linear relaxation of the integer programming problem.
+        """
+        res = linprog(-self.c, A_ub=A_ub, b_ub=b_ub, A_eq=self.A_eq, b_eq=self.b_eq, bounds=(0, None), method='highs')
+        return res
+    
+    def _append_ub_row(self, A_ub, b_ub, idx, coeff, rhs):
+        # 
+        row = np.zeros((1, len(self.c)))
+        row[0, idx] = coeff
+        if A_ub is None:
+            A_ub_new = row
+            b_ub_new = np.array([rhs], dtype=float)
+        else:
+            A_ub_new = np.vstack([A_ub, row])
+            b_ub_new = np.append(b_ub, rhs)
+        return A_ub_new, b_ub_new
+    
+    def solve(self):
+        """
+        Solve the integer programming problem using branch and bound.
+        """
+        res = self._solve_rlp(self.A_ub, self.b_ub)
+        if res.status == 2:     # Infeasible
+            raise ValueError("The problem is infeasible.")
+        elif res.status == 3:   # Unbounded
+            raise ValueError("The problem is unbounded.")
+        
+        self.BnBTree = BnBTreeNode(parent=None, x=res.x, fun=-res.fun)        
+        stack = [(self.BnBTree, self.A_ub, self.b_ub)]
 
-    if bnbTreeNode:
-        bnbTreeNode.res_x = r.x
-        bnbTreeNode.res_fun = r.fun
+        while stack:
+            node, A_ub, b_ub = stack.pop()
 
-    if not r.success:
-        return {"success": False, "x": None, "fun": None}
+            if node.fun <= self.best_val:
+                node.pruned = True
+                continue
 
-    x = r.x
-    z = sum(np.array(x) * np.array(c))
+            if self._is_int(node.x):
+                self.best_sol = np.round(node.x).astype(float)
+                self.best_val = float(self.c @ self.best_sol)
+            else:
+                # Branching: create two new nodes
+                idx = [i for i, v in enumerate(node.x) if not self._is_int(v)][0]   # Find the first non-integer variable
+                
+                A_ub_left, b_ub_left = self._append_ub_row(A_ub, b_ub, idx, +1.0, np.floor(node.x[idx]))
+                res_left = self._solve_rlp(A_ub_left, b_ub_left)
+                if res_left.success:
+                    node.left = BnBTreeNode(parent=node, x=res_left.x, fun=-res_left.fun)
+                    stack.append((node.left, A_ub_left, b_ub_left))
 
-    # 如果启用剪枝，并且当前解的目标值不优于已知最优解，则剪枝
-    if enable_pruning and z >= best_solution["fun"]:
-        return {"success": False, "x": None, "fun": None}
+                A_ub_right, b_ub_right = self._append_ub_row(A_ub, b_ub, idx, -1.0, -np.ceil(node.x[idx]))
+                res_right = self._solve_rlp(A_ub_right, b_ub_right)
+                if res_right.success:
+                    node.right = BnBTreeNode(parent=node, x=res_right.x, fun=-res_right.fun)
+                    stack.append((node.right, A_ub_right, b_ub_right))
 
-    if all([_is_int(i) for i in x]):  # 最优解是整数解
-        # 更新全局最优解
-        if z < best_solution["fun"]:
-            best_solution = {"success": True, "x": x, "fun": z}
-        return {"success": True, "x": x, "fun": z}
+        # Check if a solution was found
+        if self.best_sol is None:
+            raise ValueError("No feasible solution found.")
 
-    # 有非整数变量
-    # 找出第一个非整数变量的索引
-    opt_idx = [i for i, v in enumerate(x) if not _is_int(v)][0]
+        return self.best_sol, self.best_val   
 
-    # 构造新的条件、问题
-    # con1: <=
-    new_con1 = [1 if i == opt_idx else 0 for i in range(len(A_ub[0]))]
-    new_A1 = A_ub.copy()
-    new_A1.append(new_con1)
-    new_B1 = b_ub.copy()
-    new_B1.append(math.floor(x[opt_idx]))
-
-    # 构造新问题的 BnBTreeNode
-    if bnbTreeNode:
-        bnbTreeNode.left = BnBTreeNode()
-        bnbTreeNode.left.x_idx = opt_idx
-        bnbTreeNode.left.x_c = "<="
-        bnbTreeNode.left.x_b = math.floor(x[opt_idx])
-
-    # 递归求解新问题
-    r1 = branch_and_bound(c, new_A1, new_B1, A_eq, b_eq, bounds, bnbTreeNode.left if bnbTreeNode else None, enable_pruning)
-
-    # 构造新的条件
-    # con2: >
-    new_con2 = [-1 if i == opt_idx else 0 for i in range(len(A_ub[0]))]
-    new_A2 = A_ub.copy()
-    new_A2.append(new_con2)
-    new_B2 = b_ub.copy()
-    new_B2.append(-math.ceil(x[opt_idx]))
-
-    # 构造新问题的 BnBTreeNode
-    if bnbTreeNode:
-        bnbTreeNode.right = BnBTreeNode()
-        bnbTreeNode.right.x_idx = opt_idx
-        bnbTreeNode.right.x_c = ">="
-        bnbTreeNode.right.x_b = math.ceil(x[opt_idx])
-
-    # 递归求解新问题
-    r2 = branch_and_bound(c, new_A2, new_B2, A_eq, b_eq, bounds, bnbTreeNode.right if bnbTreeNode else None, enable_pruning)
-
-    # 子问题返回了，找出其中的最优可行继续向上一层返回
-    if r1["success"] and r2["success"]:
-        return min((r1, r2), key=lambda A_ub: A_ub["fun"])
-    elif r1["success"]:
-        return r1
-    elif r2["success"]:
-        return r2
-    else:
-        return None
-
-
-def _test1():
-    c = [3, 4, 1]
-    A_ub = [[-1, -6, -2], [-2, 0, 0]]
-    b_ub = [-5, -3]
-    A_eq = None
-    b_eq = None
-    bounds = [(0, None), (0, None), (0, None)]
-    tree = BnBTree()
-    r = branch_and_bound(c, A_ub, b_ub, A_eq, b_eq, bounds, tree.root)
-    print(r)
-    print(tree)
-
-
-def _test2():
-    c = [-40, -90]
-    A_ub = [[9, 7], [7, 20]]
-    b_ub = [56, 70]
-    A_eq = None
-    b_eq = None
-    bounds = [(0, None), (0, None)]
-    tree = BnBTree()
-    r = branch_and_bound(c, A_ub, b_ub, A_eq, b_eq, bounds, tree.root)
-    print(r)
-    print(tree)
-
-
-def _test3():
-    c = [-1, -1]
-    A_ub = [[2, 1], [4, 5]]
-    b_ub = [6, 20]
-    bounds = [(0, None), (0, None)]
-    r = branch_and_bound(c, A_ub, b_ub, None, None, bounds)
-    print(r)
+    def print_tree(self):
+        """
+        Print the branch and bound tree.
+        """
+        if self.BnBTree is not None:
+            self.BnBTree.print_tree()
+        else:
+            print("The tree is empty.")
 
 
 if __name__ == "__main__":
-    _test1()
-    _test2()
-    _test3()
+    # Example usage
+    c = np.array([3, 2])
+    A_ub = np.array([[1, 1], [2, 1]])
+    b_ub = np.array([4.5, 6.5])
+    A_eq = None
+    b_eq = None
+
+    bnb = BranchAndBound(c, A_ub, b_ub, A_eq, b_eq)
+    solution, value = bnb.solve()
+    bnb.print_tree()
+    print("Best solution:", solution)
+    print("Best value:", value)

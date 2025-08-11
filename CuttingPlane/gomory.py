@@ -115,7 +115,7 @@ class GomoryCuttingPlane(Simplex):
             if idx < len(self.c):
                 optimal_solution[idx] = rhs[i]
 
-        return optimal_value, optimal_solution
+        return optimal_solution, optimal_value
     
 
 if __name__ == "__main__":
@@ -135,7 +135,7 @@ if __name__ == "__main__":
     b_ub = np.array([12, 9])
     
     gomory = GomoryCuttingPlane(c=c, A_ub=A_ub, b_ub=b_ub)
-    value, solution = gomory.solve()
+    solution, value = gomory.solve()
     
     print("Optimal solution:", solution)
     print("Optimal value:", value)

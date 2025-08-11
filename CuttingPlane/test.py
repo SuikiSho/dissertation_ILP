@@ -12,7 +12,7 @@ def _test1():
     b_ub = np.array([4])
 
     gomory = GomoryCuttingPlane(c=c, A_ub=A_ub, b_ub=b_ub)
-    value, solution = gomory.solve()
+    solution, value = gomory.solve()
 
     print("Optimal solution:", solution)
     print("Optimal value:", value)
@@ -29,7 +29,7 @@ def _test2():
     b_ub = np.array([4.5])
 
     gomory = GomoryCuttingPlane(c, A_ub, b_ub)
-    value, solution = gomory.solve()
+    solution, value = gomory.solve()
 
     print("Optimal solution:", solution)
     print("Optimal value:", value)
@@ -46,7 +46,7 @@ def _test3():
     b_ub = np.array([10.5])
 
     gomory = GomoryCuttingPlane(c, A_ub, b_ub)
-    value, solution = gomory.solve()
+    solution, value = gomory.solve()
 
     print("Optimal solution:", solution)
     print("Optimal value:", value)
@@ -67,7 +67,7 @@ def _test4():
 
     try:
         gomory = GomoryCuttingPlane(c=c, A_ub=A_ub, b_ub=b_ub, A_eq=A_eq, b_eq=b_eq)
-        value, solution = gomory.solve()
+        solution, value = gomory.solve()
 
         print("Optimal solution:", solution)
         print("Optimal value:", value)
@@ -90,7 +90,7 @@ def _test5():
     b_eq = np.array([3])
 
     gomory = GomoryCuttingPlane(c=c, A_ub=A_ub, b_ub=b_ub, A_eq=A_eq, b_eq=b_eq)
-    value, solution = gomory.solve()
+    solution, value = gomory.solve()
 
     print("Optimal solution:", solution)
     print("Optimal value:", value)
