@@ -2,9 +2,10 @@ import numpy as np
 import pandas as pd
 import time
 
-import BranchAndBound
-import CuttingPlane
-import LiftAndProject
+from ILPSolverModels.BranchAndBound import BranchAndBound
+from ILPSolverModels.CuttingPlane import GomoryCuttingPlane
+from ILPSolverModels.LiftAndProject import SheraliAdams
+
 
 import numpy as np
 
@@ -135,21 +136,20 @@ for case in cases:
 
     # Branch and Bound
     start = time.time()
-    tree = BranchAndBound.BnBTree()
-    r = BranchAndBound.branch_and_bound(c, A_ub, b_ub, None, None, bounds, tree.root)
+    bnb = BranchAndBound(c, A_ub, b_ub)
     elapsed = time.time() - start
     results.append({'Algorithm': 'Branch and Bound', 'Size': n_vars, 'Time': elapsed})
 
     # Cutting Planes
     start = time.time()
-    gomory = CuttingPlane.GomoryCuttingPlane(c, A_ub, b_ub)
+    gomory = GomoryCuttingPlane(c, A_ub, b_ub)
     opt_sol, opt_val = gomory.solve()
     elapsed = time.time() - start
     results.append({'Algorithm': 'Cutting Planes', 'Size': n_vars, 'Time': elapsed})
 
     # Sherali-Adams
     start = time.time()
-    sa = LiftAndProject.SheraliAdams(c, A_ub, b_ub)
+    sa = SheraliAdams(c, A_ub, b_ub)
     opt_sol, opt_val = sa.solve()
     elapsed = time.time() - start
     results.append({'Algorithm': 'Sherali-Adams', 'Size': n_vars, 'Time': elapsed})

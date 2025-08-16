@@ -1,5 +1,8 @@
 import numpy as np
-from gomory import GomoryCuttingPlane
+# ILPSolverModels/CuttingPlane/test.py
+from .gomory import GomoryCuttingPlane
+from .simplex import Simplex, TwoPhaseSimplex, DualSimplex
+
 
 def _test1():
     """
@@ -96,13 +99,30 @@ def _test5():
     print("Optimal value:", value)
     print("Final tableau:\n", gomory.tableau)
     
+def _test6():
+    c = np.array([1, 1, 1, 1, 1], dtype=float)
+    A_ub = np.array([
+        [0, 0, 0, 1, 1],   # x4 + x5 ≤ 1.5
+        [0, 0, 1, 1, 0],   # x3 + x4 ≤ 1.5
+        [0, 1, 1, 0, 0],   # x2 + x3 ≤ 1.5
+        [1, 1, 0, 0, 0],   # x1 + x2 ≤ 1.5
+    ], dtype=float)
+    b_ub = np.array([1.5, 1.5, 1.5, 1.5], dtype=float)
+    A_eq = None
+    b_eq = None
 
+    gomory = GomoryCuttingPlane(c, A_ub, b_ub, A_eq, b_eq)
+    opt_sol, opt_val = gomory.solve()
+    print("Optimal Solution:", opt_sol)
+    print("Optimal Value:", opt_val)
+    print("Finial tableau:", gomory.tableau)
 
 if __name__ == "__main__":
     np.set_printoptions(precision=3, suppress=True)  # Set print options for better readability
 
-    _test1()
-    _test2()
-    _test3()
-    _test4()
-    _test5()
+    # _test1()
+    # _test2()
+    # _test3()
+    # _test4()
+    # _test5()
+    _test6()
