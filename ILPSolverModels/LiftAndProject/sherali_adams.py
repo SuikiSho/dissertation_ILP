@@ -207,7 +207,7 @@ class SheraliAdams:
             sol, obj = self.solve_rlp()
 
             # for debugging
-            print(f"Current level: {level}")
+            # print(f"Current level: {level}")
             # print(f"Current LP solution: {sol}")
             # print(f"Current LP objective: {obj}")
 
