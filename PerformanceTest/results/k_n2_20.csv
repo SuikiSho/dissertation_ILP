@@ -1,0 +1,948 @@
+key,solver,time_sec,obj_val
+knapsack_n10_seed00,BranchAndBound,0.012396208010613918,"(43.0, array([ 1.,  1.,  1.,  1.,  1.,  1., -0.,  1., -0., -0.]))"
+knapsack_n10_seed00,GomoryCuttingPlane,0.0022415409912355244,"(43.0, array([1., 1., 1., 1., 1., 1., 0., 1., 0., 0.]))"
+knapsack_n10_seed01,BranchAndBound,0.014741084014531225,"(47.0, array([ 1.,  1., -0., -0.,  1.,  1.,  1.,  1., -0.,  1.]))"
+knapsack_n10_seed01,GomoryCuttingPlane,0.0015298749785870314,"(47.0, array([1., 1., 0., 0., 1., 1., 1., 1., 0., 1.]))"
+knapsack_n10_seed02,BranchAndBound,0.005095375003293157,"(22.0, array([ 0., -0.,  1.,  0.,  0.,  1.,  1., -0.,  0.,  1.]))"
+knapsack_n10_seed02,GomoryCuttingPlane,0.003539208963047713,"(22.0, array([0., 0., 1., 0., 0., 1., 1., 0., 0., 1.]))"
+knapsack_n10_seed03,BranchAndBound,0.003940832975786179,"(23.0, array([ 0.,  0.,  0.,  1., -0.,  0.,  1.,  1.,  1., -0.]))"
+knapsack_n10_seed03,GomoryCuttingPlane,0.0004642080166377127,"(23.0, array([0., 0., 0., 1., 0., 0., 1., 1., 1., 0.]))"
+knapsack_n10_seed04,BranchAndBound,0.05748291703639552,"(42.0, array([ 1.,  1.,  1.,  1.,  1., -0., -0.,  1.,  1.,  1.]))"
+knapsack_n10_seed04,GomoryCuttingPlane,0.06252487498568371,"(42.0, array([1., 1., 1., 1., 1., 0., 0., 1., 1., 1.]))"
+knapsack_n10_seed05,BranchAndBound,0.003589667030610144,"(47.0, array([-0.,  1.,  1.,  1.,  1.,  1., -0.,  1.,  1.,  1.]))"
+knapsack_n10_seed05,GomoryCuttingPlane,0.0021519589936360717,"(47.0, array([0., 1., 1., 1., 1., 1., 0., 1., 1., 1.]))"
+knapsack_n10_seed06,BranchAndBound,0.0004954999894835055,"(40.0, array([ 0.,  1.,  0.,  1.,  1.,  1.,  1.,  1.,  1., -0.]))"
+knapsack_n10_seed06,GomoryCuttingPlane,0.0004130830056965351,"(40.0, array([0., 1., 0., 1., 1., 1., 1., 1., 1., 0.]))"
+knapsack_n10_seed07,BranchAndBound,0.011958207993302494,"(41.0, array([0., 1., 1., 0., 1., 0., 0., 1., 1., 1.]))"
+knapsack_n10_seed07,GomoryCuttingPlane,0.04425387503579259,"(38.0, array([1., 0., 0., 0., 1., 1., 1., 1., 1., 1.]))"
+knapsack_n10_seed08,BranchAndBound,0.022226542001590133,"(50.0, array([ 1.,  1., -0., -0.,  1., -0.,  1.,  1.,  1.,  1.]))"
+knapsack_n10_seed08,GomoryCuttingPlane,0.04976383299799636,"(49.0, array([1., 1., 0., 0., 0., 1., 1., 1., 1., 1.]))"
+knapsack_n10_seed09,BranchAndBound,0.024246792017947882,"(25.0, array([-0.,  1., -0., -0., -0.,  1.,  1.,  1., -0., -0.]))"
+knapsack_n10_seed09,GomoryCuttingPlane,0.04767183301737532,"(19.0, array([0., 0., 0., 0., 0., 1., 1., 1., 0., 0.]))"
+knapsack_n10_seed10,BranchAndBound,0.002134750015102327,"(25.0, array([ 0.,  0.,  0., -0.,  1.,  1.,  0.,  1.,  1.,  0.]))"
+knapsack_n10_seed10,GomoryCuttingPlane,0.0008566670003347099,"(25.0, array([0., 0., 0., 0., 1., 1., 0., 1., 1., 0.]))"
+knapsack_n10_seed11,BranchAndBound,0.01849829201819375,"(35.0, array([ 0.,  0.,  1.,  0., -0.,  1.,  1.,  1.,  1.,  1.]))"
+knapsack_n10_seed11,GomoryCuttingPlane,0.0011076669907197356,"(35.0, array([0., 0., 1., 0., 0., 1., 1., 1., 1., 1.]))"
+knapsack_n10_seed12,BranchAndBound,0.01049091701861471,"(48.0, array([-0.,  1.,  1., -0., -0.,  1.,  1.,  1.,  1.,  1.]))"
+knapsack_n10_seed12,GomoryCuttingPlane,0.0007991669699549675,"(48.0, array([0., 1., 1., 0., 0., 1., 1., 1., 1., 1.]))"
+knapsack_n10_seed13,BranchAndBound,0.00542404199950397,"(45.0, array([-0.,  1.,  0.,  1.,  0.,  1.,  0.,  1.,  1.,  1.]))"
+knapsack_n10_seed13,GomoryCuttingPlane,0.0010940410429611802,"(45.0, array([1., 0., 0., 1., 1., 1., 0., 1., 1., 1.]))"
+knapsack_n10_seed14,BranchAndBound,0.011681708041578531,"(37.0, array([ 1., -0.,  1., -0.,  1., -0.,  1., -0.,  1.,  1.]))"
+knapsack_n10_seed14,GomoryCuttingPlane,0.0020826670224778354,"(37.0, array([1., 0., 1., 0., 1., 0., 1., 0., 1., 1.]))"
+knapsack_n10_seed15,BranchAndBound,0.01773962494917214,"(30.0, array([-0., -0.,  1.,  1.,  1., -0., -0.,  1., -0.,  1.]))"
+knapsack_n10_seed15,GomoryCuttingPlane,0.001030542014632374,"(30.0, array([0., 0., 1., 1., 1., 0., 0., 1., 0., 1.]))"
+knapsack_n10_seed16,BranchAndBound,0.008080041967332363,"(20.0, array([-0.,  1.,  1., -0.,  1.,  1., -0., -0., -0., -0.]))"
+knapsack_n10_seed16,GomoryCuttingPlane,0.0018505420302972198,"(20.0, array([0., 1., 1., 0., 1., 1., 0., 0., 0., 0.]))"
+knapsack_n10_seed17,BranchAndBound,0.019510708982124925,"(18.0, array([ 0.,  0.,  1.,  1., -0., -0.,  1.,  0., -0.,  0.]))"
+knapsack_n10_seed17,GomoryCuttingPlane,0.0020739579922519624,"(18.0, array([0., 0., 1., 1., 0., 0., 1., 0., 0., 0.]))"
+knapsack_n10_seed18,BranchAndBound,0.013473041006363928,"(31.0, array([ 1.,  1.,  1.,  0., -0.,  1.,  1.,  0.,  0.,  1.]))"
+knapsack_n10_seed18,GomoryCuttingPlane,0.04604554100660607,"(24.0, array([1., 1., 1., 0., 0., 0., 0., 0., 0., 1.]))"
+knapsack_n10_seed19,BranchAndBound,0.006838750035967678,"(26.0, array([ 0.,  1.,  1.,  1.,  0.,  0.,  0.,  0.,  1., -0.]))"
+knapsack_n10_seed19,GomoryCuttingPlane,0.0005187089554965496,"(26.0, array([0., 1., 1., 1., 0., 0., 0., 0., 1., 0.]))"
+knapsack_n11_seed00,BranchAndBound,0.009657874994445592,"(36.0, array([0., 1., 0., 1., 0., 1., 1., 1., 1., 0., 0.]))"
+knapsack_n11_seed00,GomoryCuttingPlane,0.0007872080313973129,"(36.0, array([1., 1., 0., 1., 0., 0., 1., 1., 1., 0., 0.]))"
+knapsack_n11_seed01,BranchAndBound,0.030176458007190377,"(26.0, array([-0., -0., -0.,  1.,  1.,  1., -0., -0.,  1., -0., -0.]))"
+knapsack_n11_seed01,GomoryCuttingPlane,0.0016001249896362424,"(26.0, array([0., 0., 0., 1., 1., 1., 0., 0., 1., 0., 0.]))"
+knapsack_n11_seed02,BranchAndBound,0.01489058299921453,"(37.0, array([-0.,  1.,  1., -0.,  1., -0.,  1., -0.,  1.,  1., -0.]))"
+knapsack_n11_seed02,GomoryCuttingPlane,0.0011613329988904297,"(37.0, array([0., 1., 1., 0., 1., 0., 1., 0., 1., 1., 0.]))"
+knapsack_n11_seed03,BranchAndBound,0.011140291986521333,"(46.0, array([1., 0., 1., 1., 1., 1., 0., 0., 1., 0., 0.]))"
+knapsack_n11_seed03,GomoryCuttingPlane,0.05392483394825831,"(40.0, array([1., 0., 0., 1., 1., 1., 1., 0., 1., 0., 0.]))"
+knapsack_n11_seed04,BranchAndBound,0.008329083037097007,"(32.0, array([ 0.,  0.,  1.,  1.,  0.,  1.,  1.,  0.,  0., -0.,  0.]))"
+knapsack_n11_seed04,GomoryCuttingPlane,0.0031807079794816673,"(32.0, array([0., 0., 1., 1., 0., 1., 1., 0., 0., 0., 0.]))"
+knapsack_n11_seed05,BranchAndBound,0.0175161249935627,"(21.0, array([-0., -0., -0.,  1., -0.,  1., -0., -0.,  1., -0., -0.]))"
+knapsack_n11_seed05,GomoryCuttingPlane,0.003856833034660667,"(21.0, array([0., 0., 0., 1., 0., 1., 0., 0., 1., 0., 0.]))"
+knapsack_n11_seed06,BranchAndBound,0.0035526659921742976,"(54.0, array([ 1.,  1., -0.,  1., -0.,  1.,  1.,  1., -0.,  1.,  1.]))"
+knapsack_n11_seed06,GomoryCuttingPlane,0.0007179160020314157,"(54.0, array([1., 1., 0., 1., 0., 1., 1., 1., 0., 1., 1.]))"
+knapsack_n11_seed07,BranchAndBound,0.009878541983198375,"(37.0, array([ 0.,  1.,  1.,  0.,  1., -0.,  0.,  1.,  0.,  1.,  0.]))"
+knapsack_n11_seed07,GomoryCuttingPlane,0.04835541598731652,"(32.0, array([0., 0., 1., 0., 1., 1., 0., 1., 0., 1., 0.]))"
+knapsack_n11_seed08,BranchAndBound,0.000548332987818867,"(19.0, array([ 1.,  0.,  1.,  0.,  0.,  1.,  0.,  0.,  0.,  1., -0.]))"
+knapsack_n11_seed08,GomoryCuttingPlane,0.00037875003181397915,"(19.0, array([1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 0.]))"
+knapsack_n11_seed09,BranchAndBound,0.026524666987825185,"(41.0, array([-0.,  1.,  1.,  1.,  1.,  1., -0.,  1., -0.,  1., -0.]))"
+knapsack_n11_seed09,GomoryCuttingPlane,0.0008690410177223384,"(41.0, array([0., 1., 1., 1., 1., 1., 0., 1., 0., 1., 0.]))"
+knapsack_n11_seed10,BranchAndBound,0.000381499994546175,"(38.0, array([ 0.,  0.,  0.,  1.,  0.,  1.,  1.,  1., -0.,  1.,  1.]))"
+knapsack_n11_seed10,GomoryCuttingPlane,0.00036995799746364355,"(38.0, array([0., 0., 0., 1., 0., 1., 1., 1., 0., 1., 1.]))"
+knapsack_n11_seed11,BranchAndBound,0.011958791990764439,"(29.0, array([ 1.,  1., -0.,  1.,  0., -0.,  1., -0.,  1.,  0.,  1.]))"
+knapsack_n11_seed11,GomoryCuttingPlane,0.0006803750293329358,"(29.0, array([1., 1., 0., 1., 0., 0., 1., 0., 1., 0., 1.]))"
+knapsack_n11_seed12,BranchAndBound,0.006552000006195158,"(43.0, array([ 0.,  1.,  0.,  0., -0.,  1.,  1.,  1.,  0.,  1.,  1.]))"
+knapsack_n11_seed12,GomoryCuttingPlane,0.0010000839829444885,"(43.0, array([0., 1., 0., 0., 0., 1., 1., 1., 0., 1., 1.]))"
+knapsack_n11_seed13,BranchAndBound,0.055053708027116954,"(50.0, array([-0.,  1.,  0.,  1.,  1.,  1.,  1.,  1.,  1., -0.,  1.]))"
+knapsack_n11_seed13,GomoryCuttingPlane,0.002333166019525379,"(50.0, array([0., 1., 0., 1., 1., 1., 1., 1., 1., 0., 1.]))"
+knapsack_n11_seed14,BranchAndBound,0.008912500052247196,"(32.0, array([ 1.,  0.,  1.,  1., -0.,  0.,  1.,  0.,  1.,  1.,  0.]))"
+knapsack_n11_seed14,GomoryCuttingPlane,0.0017224170151166618,"(32.0, array([1., 0., 1., 1., 0., 0., 1., 0., 1., 1., 0.]))"
+knapsack_n11_seed15,BranchAndBound,0.004402042017318308,"(57.0, array([-0.,  1., -0.,  1.,  1.,  1.,  1.,  1.,  1., -0., -0.]))"
+knapsack_n11_seed15,GomoryCuttingPlane,0.0009731249883770943,"(57.0, array([0., 1., 0., 1., 1., 1., 1., 1., 1., 0., 0.]))"
+knapsack_n11_seed16,BranchAndBound,0.023378334008157253,"(37.0, array([-0.,  1.,  1., -0., -0., -0.,  1.,  1.,  1., -0.,  1.]))"
+knapsack_n11_seed16,GomoryCuttingPlane,0.0027792920009233057,"(37.0, array([0., 1., 1., 0., 0., 0., 1., 1., 1., 0., 1.]))"
+knapsack_n11_seed17,BranchAndBound,0.013265541987493634,"(51.0, array([ 1., -0.,  1., -0.,  1.,  1.,  1.,  1., -0.,  1.,  1.]))"
+knapsack_n11_seed17,GomoryCuttingPlane,0.001898416958283633,"(51.0, array([1., 0., 1., 0., 1., 1., 1., 1., 0., 1., 1.]))"
+knapsack_n11_seed18,BranchAndBound,0.00040729198371991515,"(29.0, array([ 0.,  0.,  1.,  1.,  1.,  1.,  1., -0.,  0.,  1.,  0.]))"
+knapsack_n11_seed18,GomoryCuttingPlane,0.0003582920180633664,"(29.0, array([0., 0., 1., 1., 1., 1., 1., 0., 0., 1., 0.]))"
+knapsack_n11_seed19,BranchAndBound,0.00036862498382106423,"(36.0, array([-0.,  0.,  1.,  1.,  1.,  1.,  1.,  1.,  0.,  0.,  0.]))"
+knapsack_n11_seed19,GomoryCuttingPlane,0.0003483330365270376,"(36.0, array([0., 0., 1., 1., 1., 1., 1., 1., 0., 0., 0.]))"
+knapsack_n12_seed00,BranchAndBound,0.0003547910018824041,"(48.0, array([ 1.,  1., -0.,  0.,  0.,  1.,  1.,  1.,  1.,  1.,  1.,  0.]))"
+knapsack_n12_seed00,GomoryCuttingPlane,0.00038416602183133364,"(48.0, array([1., 1., 0., 0., 0., 1., 1., 1., 1., 1., 1., 0.]))"
+knapsack_n12_seed01,BranchAndBound,0.027446124993730336,"(47.0, array([-0.,  1.,  1., -0.,  1., -0.,  1.,  1.,  1., -0., -0.,  1.]))"
+knapsack_n12_seed01,GomoryCuttingPlane,0.0011356660397723317,"(47.0, array([0., 1., 1., 0., 1., 0., 1., 1., 1., 0., 0., 1.]))"
+knapsack_n12_seed02,BranchAndBound,0.02235395897878334,"(51.0, array([ 1., -0.,  1.,  1.,  1., -0.,  1.,  1.,  1.,  1., -0., -0.]))"
+knapsack_n12_seed02,GomoryCuttingPlane,0.004350333008915186,"(51.0, array([1., 0., 1., 1., 0., 0., 1., 1., 1., 1., 0., 1.]))"
+knapsack_n12_seed03,BranchAndBound,0.044032166013494134,"(35.0, array([ 1.,  0.,  0.,  1., -0.,  1., -0., -0.,  1., -0.,  1.,  1.]))"
+knapsack_n12_seed03,GomoryCuttingPlane,0.045971999992616475,"(38.0, array([1., 0., 0., 0., 0., 1., 1., 0., 1., 0., 1., 1.]))"
+knapsack_n12_seed04,BranchAndBound,0.0015139160095714033,"(34.0, array([ 0.,  1.,  0.,  1.,  1., -0., -0.,  0.,  1.,  1.,  0.,  1.]))"
+knapsack_n12_seed04,GomoryCuttingPlane,0.000635584001429379,"(34.0, array([0., 1., 0., 1., 1., 0., 0., 0., 1., 1., 0., 1.]))"
+knapsack_n12_seed05,BranchAndBound,0.00043120799819007516,"(41.0, array([0., 1., 0., 0., 1., 1., 0., 1., 0., 0., 1., 1.]))"
+knapsack_n12_seed05,GomoryCuttingPlane,0.0006332499906420708,"(41.0, array([0., 1., 0., 0., 1., 1., 0., 1., 0., 0., 1., 1.]))"
+knapsack_n12_seed06,BranchAndBound,0.0029013329767622054,"(40.0, array([ 0.,  1.,  1.,  1.,  0.,  1.,  1.,  1., -0.,  1.,  0.,  0.]))"
+knapsack_n12_seed06,GomoryCuttingPlane,0.0015355420182459056,"(40.0, array([0., 1., 1., 1., 0., 1., 1., 1., 0., 1., 0., 0.]))"
+knapsack_n12_seed07,BranchAndBound,0.0022380000445991755,"(46.0, array([1., 1., 1., 0., 0., 1., 0., 0., 1., 0., 1., 0.]))"
+knapsack_n12_seed07,GomoryCuttingPlane,0.0008393339812755585,"(46.0, array([1., 1., 1., 0., 0., 1., 0., 0., 1., 0., 1., 0.]))"
+knapsack_n12_seed08,BranchAndBound,0.02441016602097079,"(28.0, array([ 1.,  0.,  0.,  0.,  1.,  0., -0.,  0.,  1.,  1.,  0.,  0.]))"
+knapsack_n12_seed08,GomoryCuttingPlane,0.0012891670339740813,"(34.0, array([1., 1., 0., 0., 1., 0., 1., 0., 1., 0., 0., 0.]))"
+knapsack_n12_seed09,BranchAndBound,0.01480391703080386,"(41.0, array([ 1.,  0.,  1., -0.,  1.,  0., -0.,  1.,  1.,  0.,  1.,  1.]))"
+knapsack_n12_seed09,GomoryCuttingPlane,0.04301758302608505,"(37.0, array([0., 0., 1., 1., 0., 0., 0., 1., 1., 0., 1., 1.]))"
+knapsack_n12_seed10,BranchAndBound,0.0005473750061355531,"(48.0, array([ 1., -0.,  1.,  1.,  0.,  1.,  0.,  1.,  0.,  1.,  0.,  0.]))"
+knapsack_n12_seed10,GomoryCuttingPlane,0.0004105829866603017,"(48.0, array([1., 0., 1., 1., 0., 1., 0., 1., 0., 1., 0., 0.]))"
+knapsack_n12_seed11,BranchAndBound,0.010126542008947581,"(9.0, array([ 0.,  1.,  0., -0.,  1., -0.,  0.,  0.,  0.,  0.,  0., -0.]))"
+knapsack_n12_seed11,GomoryCuttingPlane,0.000532790960278362,"(9.0, array([0., 1., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0.]))"
+knapsack_n12_seed12,BranchAndBound,0.027079207997303456,"(25.0, array([-0., -0.,  1., -0.,  1.,  1.,  1., -0., -0., -0.,  1., -0.]))"
+knapsack_n12_seed12,GomoryCuttingPlane,0.002963208011351526,"(25.0, array([0., 0., 1., 0., 1., 1., 1., 0., 0., 0., 1., 0.]))"
+knapsack_n12_seed13,BranchAndBound,0.0030605419888161123,"(39.0, array([-0.,  0.,  1.,  1.,  0.,  0.,  0.,  0.,  1.,  1.,  0.,  1.]))"
+knapsack_n12_seed13,GomoryCuttingPlane,0.0007937499904073775,"(39.0, array([0., 0., 1., 1., 0., 0., 0., 0., 1., 1., 0., 1.]))"
+knapsack_n12_seed14,BranchAndBound,0.0006632080185227096,"(33.0, array([ 0.,  0.,  0.,  0.,  0.,  1., -0.,  1.,  1.,  0.,  1.,  1.]))"
+knapsack_n12_seed14,GomoryCuttingPlane,0.0004594160127453506,"(33.0, array([0., 0., 0., 0., 0., 1., 0., 1., 1., 0., 1., 1.]))"
+knapsack_n12_seed15,BranchAndBound,0.014802958001382649,"(48.0, array([ 0.,  1., -0.,  1.,  0.,  0.,  1.,  1.,  1.,  1.,  0.,  1.]))"
+knapsack_n12_seed15,GomoryCuttingPlane,0.006717832991853356,fail: ValueError: Initial tableau is not primal feasible. Use TwoPhaseSimplex for problems with negative right-hand side values.
+knapsack_n12_seed16,BranchAndBound,0.014214417024049908,"(30.0, array([0., 1., 0., 0., 1., 1., 0., 0., 0., 0., 1., 0.]))"
+knapsack_n12_seed16,GomoryCuttingPlane,0.0014896669890731573,"(30.0, array([0., 1., 0., 0., 1., 1., 0., 0., 0., 0., 1., 0.]))"
+knapsack_n12_seed17,BranchAndBound,0.0004901249776594341,"(65.0, array([ 1.,  1.,  0.,  1.,  1.,  0.,  1.,  1.,  1., -0.,  1.,  1.]))"
+knapsack_n12_seed17,GomoryCuttingPlane,0.00046137499157339334,"(65.0, array([1., 1., 0., 1., 1., 0., 1., 1., 1., 0., 1., 1.]))"
+knapsack_n12_seed18,BranchAndBound,0.010115250013768673,"(56.0, array([-0., -0.,  1.,  1.,  1.,  1.,  1.,  1.,  1.,  1.,  1.,  1.]))"
+knapsack_n12_seed18,GomoryCuttingPlane,0.0008068329771049321,"(56.0, array([0., 0., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1.]))"
+knapsack_n12_seed19,BranchAndBound,0.015977540984749794,"(32.0, array([-0., -0., -0.,  1., -0.,  1.,  1.,  1.,  1., -0., -0., -0.]))"
+knapsack_n12_seed19,GomoryCuttingPlane,0.0009800000116229057,"(32.0, array([0., 0., 0., 1., 0., 1., 1., 1., 1., 0., 0., 0.]))"
+knapsack_n13_seed00,BranchAndBound,0.012384250003378838,"(33.0, array([ 1.,  0.,  1.,  1.,  0., -0.,  0.,  0.,  1.,  1.,  0., -0.,  0.]))"
+knapsack_n13_seed00,GomoryCuttingPlane,0.013366208004299551,"(32.0, array([1., 0., 1., 1., 0., 1., 0., 0., 0., 0., 0., 1., 0.]))"
+knapsack_n13_seed01,BranchAndBound,0.029169707966502756,"(40.0, array([ 1.,  1.,  1.,  1., -0., -0.,  1., -0., -0.,  1., -0.,  1., -0.]))"
+knapsack_n13_seed01,GomoryCuttingPlane,0.0011869999580085278,"(40.0, array([1., 1., 1., 1., 0., 0., 1., 0., 0., 1., 0., 1., 0.]))"
+knapsack_n13_seed02,BranchAndBound,0.0012517919531092048,"(39.0, array([ 0.,  0.,  0.,  0.,  0.,  1.,  1.,  1.,  1.,  0.,  1., -0.,  0.]))"
+knapsack_n13_seed02,GomoryCuttingPlane,0.0005895419744774699,"(39.0, array([0., 0., 0., 0., 0., 1., 1., 1., 1., 0., 1., 0., 0.]))"
+knapsack_n13_seed03,BranchAndBound,0.0003636250039562583,"(29.0, array([0., 0., 1., 1., 0., 1., 1., 0., 1., 1., 1., 0., 0.]))"
+knapsack_n13_seed03,GomoryCuttingPlane,0.0005212909891270101,"(29.0, array([0., 0., 1., 1., 0., 1., 1., 0., 1., 1., 1., 0., 0.]))"
+knapsack_n13_seed04,BranchAndBound,0.07732766697881743,"(39.0, array([ 1.,  0.,  0.,  1.,  0.,  1.,  0.,  1.,  1.,  1., -0.,  1.,  0.]))"
+knapsack_n13_seed04,GomoryCuttingPlane,0.04013054195092991,"(40.0, array([1., 0., 0., 1., 0., 1., 0., 0., 1., 1., 1., 1., 1.]))"
+knapsack_n13_seed05,BranchAndBound,0.0015667919651605189,"(26.0, array([ 1.,  1.,  0.,  0.,  1., -0.,  0.,  0.,  0.,  0.,  1.,  0.,  0.]))"
+knapsack_n13_seed05,GomoryCuttingPlane,0.0004750409862026572,"(26.0, array([1., 1., 0., 0., 1., 0., 0., 0., 0., 0., 1., 0., 0.]))"
+knapsack_n13_seed06,BranchAndBound,0.02730508300010115,"(47.0, array([0., 1., 1., 0., 1., 0., 1., 1., 1., 1., 0., 1., 0.]))"
+knapsack_n13_seed06,GomoryCuttingPlane,0.053992166998796165,"(47.0, array([0., 1., 1., 1., 0., 0., 1., 1., 0., 1., 1., 1., 0.]))"
+knapsack_n13_seed07,BranchAndBound,0.012472458998672664,"(49.0, array([ 0.,  0.,  1.,  1.,  1.,  1., -0.,  1.,  1.,  1.,  1.,  1., -0.]))"
+knapsack_n13_seed07,GomoryCuttingPlane,0.0007797079742886126,"(49.0, array([0., 0., 1., 1., 1., 1., 0., 1., 1., 1., 1., 1., 0.]))"
+knapsack_n13_seed08,BranchAndBound,0.024945415963884443,"(52.0, array([ 1., -0.,  1.,  1., -0., -0., -0., -0.,  1.,  1., -0.,  1.,  1.]))"
+knapsack_n13_seed08,GomoryCuttingPlane,0.025810708000790328,"(52.0, array([1., 0., 1., 0., 0., 0., 0., 1., 1., 1., 1., 1., 1.]))"
+knapsack_n13_seed09,BranchAndBound,0.005269541987217963,"(33.0, array([ 1.,  0.,  0.,  1.,  1.,  1.,  0.,  0.,  0.,  1.,  0.,  0., -0.]))"
+knapsack_n13_seed09,GomoryCuttingPlane,0.012349833967164159,"(33.0, array([1., 0., 0., 1., 1., 1., 0., 0., 0., 1., 0., 0., 0.]))"
+knapsack_n13_seed10,BranchAndBound,0.027126166969537735,"(55.0, array([ 1.,  1.,  1.,  1.,  1., -0.,  1.,  1.,  1.,  1., -0.,  1.,  1.]))"
+knapsack_n13_seed10,GomoryCuttingPlane,0.001067416975274682,"(55.0, array([1., 1., 1., 1., 1., 0., 1., 1., 1., 1., 0., 1., 1.]))"
+knapsack_n13_seed11,BranchAndBound,0.0004609999596141279,"(63.0, array([0., 1., 1., 0., 1., 0., 0., 1., 1., 1., 1., 1., 1.]))"
+knapsack_n13_seed11,GomoryCuttingPlane,0.0005876669893041253,"(63.0, array([1., 1., 1., 1., 1., 0., 0., 1., 1., 1., 1., 1., 0.]))"
+knapsack_n13_seed12,BranchAndBound,0.028971082996577024,"(46.0, array([ 1.,  0.,  1.,  0., -0.,  1.,  0.,  0.,  1.,  1.,  1.,  1.,  0.]))"
+knapsack_n13_seed12,GomoryCuttingPlane,0.004771791980601847,"(46.0, array([1., 0., 1., 0., 0., 1., 0., 0., 1., 1., 1., 1., 0.]))"
+knapsack_n13_seed13,BranchAndBound,0.02097108302405104,"(46.0, array([1., 0., 1., 1., 1., 1., 0., 1., 0., 1., 0., 0., 0.]))"
+knapsack_n13_seed13,GomoryCuttingPlane,0.026199083018582314,"(48.0, array([1., 1., 1., 1., 1., 1., 0., 1., 0., 1., 0., 0., 0.]))"
+knapsack_n13_seed14,BranchAndBound,0.01506425003753975,"(36.0, array([ 1.,  1.,  0.,  1., -0.,  0.,  1.,  0.,  0.,  0.,  1.,  1., -0.]))"
+knapsack_n13_seed14,GomoryCuttingPlane,0.004209792008623481,"(36.0, array([1., 1., 0., 1., 0., 0., 1., 0., 0., 0., 1., 1., 0.]))"
+knapsack_n13_seed15,BranchAndBound,0.023812790983356535,"(61.0, array([ 1.,  1., -0.,  1.,  1.,  1.,  1., -0.,  1.,  1., -0., -0.,  1.]))"
+knapsack_n13_seed15,GomoryCuttingPlane,0.001269333006348461,"(61.0, array([1., 1., 0., 1., 1., 1., 1., 0., 1., 1., 0., 0., 1.]))"
+knapsack_n13_seed16,BranchAndBound,0.0004326250054873526,"(35.0, array([ 0.,  0.,  1.,  0.,  1.,  0.,  1.,  1.,  0.,  1., -0.,  1.,  0.]))"
+knapsack_n13_seed16,GomoryCuttingPlane,0.00044816703302785754,"(35.0, array([0., 0., 1., 0., 1., 0., 1., 1., 0., 1., 0., 1., 0.]))"
+knapsack_n13_seed17,BranchAndBound,0.017631250026170164,"(46.0, array([-0., -0., -0.,  1., -0., -0., -0.,  1.,  1.,  1.,  1.,  1.,  1.]))"
+knapsack_n13_seed17,GomoryCuttingPlane,0.029373749974183738,"(46.0, array([0., 0., 0., 1., 0., 0., 0., 1., 1., 1., 1., 1., 1.]))"
+knapsack_n13_seed18,BranchAndBound,0.0040412499802187085,"(5.0, array([-0.,  0.,  0.,  1., -0.,  1.,  0., -0., -0.,  0.,  0., -0.,  0.]))"
+knapsack_n13_seed18,GomoryCuttingPlane,0.0007022080244496465,"(5.0, array([0., 0., 0., 1., 0., 1., 0., 0., 0., 0., 0., 0., 0.]))"
+knapsack_n13_seed19,BranchAndBound,0.012155250005889684,"(39.0, array([-0.,  1.,  0.,  0.,  1.,  0.,  1.,  1.,  1., -0.,  1.,  0.,  0.]))"
+knapsack_n13_seed19,GomoryCuttingPlane,0.0010963749955408275,"(39.0, array([0., 1., 0., 0., 1., 0., 1., 1., 1., 0., 1., 0., 0.]))"
+knapsack_n14_seed00,BranchAndBound,0.00897629203973338,"(42.0, array([ 1.,  1.,  1.,  1.,  1.,  0.,  0.,  1.,  0., -0.,  1.,  0., -0.,
+        0.]))"
+knapsack_n14_seed00,GomoryCuttingPlane,0.0552489590481855,"(45.0, array([1., 1., 1., 1., 1., 0., 0., 0., 0., 1., 1., 0., 1., 0.]))"
+knapsack_n14_seed01,BranchAndBound,0.004350957984570414,"(46.0, array([ 1.,  0.,  0.,  1.,  1.,  1.,  0.,  0.,  1., -0.,  1.,  0.,  0.,
+        1.]))"
+knapsack_n14_seed01,GomoryCuttingPlane,0.0008867500000633299,"(46.0, array([1., 0., 0., 1., 1., 1., 0., 0., 1., 0., 1., 0., 0., 1.]))"
+knapsack_n14_seed02,BranchAndBound,0.00037412502570077777,"(59.0, array([ 0.,  0.,  1.,  1.,  1.,  1.,  1.,  1.,  0.,  1.,  1.,  1., -0.,
+        1.]))"
+knapsack_n14_seed02,GomoryCuttingPlane,0.0006856670370325446,"(59.0, array([0., 0., 1., 1., 1., 1., 1., 1., 0., 1., 1., 1., 0., 1.]))"
+knapsack_n14_seed03,BranchAndBound,0.00041816598968580365,"(37.0, array([ 0.,  1.,  1.,  1.,  0.,  0.,  0.,  0.,  0.,  1.,  1.,  1., -0.,
+        0.]))"
+knapsack_n14_seed03,GomoryCuttingPlane,0.00041933299507945776,"(37.0, array([0., 1., 1., 1., 0., 0., 0., 0., 0., 1., 1., 1., 0., 0.]))"
+knapsack_n14_seed04,BranchAndBound,0.011785458016674966,"(48.0, array([ 0.,  1.,  1.,  1.,  0.,  1.,  1.,  1.,  1.,  0.,  1.,  0., -0.,
+        0.]))"
+knapsack_n14_seed04,GomoryCuttingPlane,0.03288208297453821,"(54.0, array([0., 1., 1., 1., 0., 1., 1., 1., 1., 0., 1., 1., 1., 0.]))"
+knapsack_n14_seed05,BranchAndBound,0.01606245804578066,"(68.0, array([ 1.,  1.,  1.,  1.,  1.,  1., -0.,  1.,  1.,  1.,  1.,  1.,  1.,
+        1.]))"
+knapsack_n14_seed05,GomoryCuttingPlane,0.03391950001241639,"(68.0, array([1., 1., 1., 1., 1., 1., 0., 1., 1., 1., 1., 1., 1., 1.]))"
+knapsack_n14_seed06,BranchAndBound,0.021742625045590103,"(63.0, array([ 1.,  1.,  1.,  1.,  1.,  1., -0.,  1.,  1., -0.,  1., -0., -0.,
+        1.]))"
+knapsack_n14_seed06,GomoryCuttingPlane,0.0015015419921837747,"(63.0, array([1., 1., 1., 1., 1., 1., 0., 1., 1., 0., 1., 0., 0., 1.]))"
+knapsack_n14_seed07,BranchAndBound,0.02339212503284216,"(50.0, array([ 1.,  1.,  1., -0.,  1.,  1., -0., -0.,  1.,  1., -0., -0.,  1.,
+        1.]))"
+knapsack_n14_seed07,GomoryCuttingPlane,0.012836207984946668,"(50.0, array([1., 1., 1., 0., 1., 1., 0., 0., 1., 1., 0., 0., 1., 1.]))"
+knapsack_n14_seed08,BranchAndBound,0.016294458997435868,"(33.0, array([0., 1., 0., 0., 0., 1., 0., 1., 1., 1., 0., 0., 0., 1.]))"
+knapsack_n14_seed08,GomoryCuttingPlane,0.0007889170083217323,"(33.0, array([0., 1., 0., 0., 0., 1., 0., 1., 1., 1., 0., 0., 0., 1.]))"
+knapsack_n14_seed09,BranchAndBound,0.00044762500328943133,"(47.0, array([ 1.,  0.,  1.,  0.,  1.,  1.,  1.,  0.,  0.,  1.,  1.,  1., -0.,
+        1.]))"
+knapsack_n14_seed09,GomoryCuttingPlane,0.0006111250258982182,"(47.0, array([1., 0., 1., 0., 1., 1., 1., 0., 0., 1., 1., 1., 0., 1.]))"
+knapsack_n14_seed10,BranchAndBound,0.010066499991808087,"(53.0, array([ 0.,  1.,  1.,  1.,  1.,  1.,  1.,  1.,  1., -0.,  1.,  0.,  1.,
+        0.]))"
+knapsack_n14_seed10,GomoryCuttingPlane,0.0011441250098869205,"(53.0, array([0., 1., 0., 1., 1., 1., 1., 1., 1., 1., 1., 0., 1., 0.]))"
+knapsack_n14_seed11,BranchAndBound,0.02995799999916926,"(32.0, array([ 1.,  1.,  0.,  1., -0.,  0.,  0.,  1.,  0.,  0.,  0.,  0.,  0.,
+        0.]))"
+knapsack_n14_seed11,GomoryCuttingPlane,0.0012920830049552023,"(32.0, array([1., 1., 0., 1., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0.]))"
+knapsack_n14_seed12,BranchAndBound,0.044127291010227054,"(50.0, array([-0.,  1.,  1.,  1.,  1., -0.,  1.,  1.,  1.,  1., -0., -0., -0.,
+       -0.]))"
+knapsack_n14_seed12,GomoryCuttingPlane,0.014995707955677062,"(49.0, array([0., 1., 1., 1., 1., 0., 1., 1., 0., 1., 0., 0., 0., 1.]))"
+knapsack_n14_seed13,BranchAndBound,0.037168042035773396,"(44.0, array([ 1., -0., -0.,  1.,  1.,  1.,  1., -0.,  1.,  1.,  1., -0., -0.,
+       -0.]))"
+knapsack_n14_seed13,GomoryCuttingPlane,0.04416716698324308,"(46.0, array([1., 0., 0., 1., 1., 0., 1., 1., 1., 1., 1., 1., 0., 0.]))"
+knapsack_n14_seed14,BranchAndBound,0.010284583026077598,"(59.0, array([ 1.,  1.,  1.,  1.,  1.,  1.,  1.,  1., -0.,  1.,  1., -0.,  1.,
+       -0.]))"
+knapsack_n14_seed14,GomoryCuttingPlane,0.002944958978332579,fail: ValueError: Initial tableau is not primal feasible. Use TwoPhaseSimplex for problems with negative right-hand side values.
+knapsack_n14_seed15,BranchAndBound,0.05865595903014764,"(47.0, array([ 1., -0.,  1., -0., -0., -0.,  1., -0.,  1.,  1., -0.,  1., -0.,
+        1.]))"
+knapsack_n14_seed15,GomoryCuttingPlane,0.002858875028323382,"(47.0, array([1., 0., 1., 0., 0., 0., 1., 0., 1., 1., 0., 1., 0., 1.]))"
+knapsack_n14_seed16,BranchAndBound,0.00035574997309595346,"(28.0, array([1., 0., 0., 1., 1., 0., 0., 0., 0., 1., 0., 0., 0., 1.]))"
+knapsack_n14_seed16,GomoryCuttingPlane,0.00041737500578165054,"(28.0, array([1., 0., 0., 1., 1., 1., 0., 0., 0., 1., 0., 0., 0., 0.]))"
+knapsack_n14_seed17,BranchAndBound,0.006916041951626539,"(58.0, array([-0.,  1.,  1.,  1.,  1.,  0.,  1.,  0.,  1.,  1.,  1.,  1.,  1.,
+       -0.]))"
+knapsack_n14_seed17,GomoryCuttingPlane,0.001436582999303937,"(58.0, array([0., 1., 1., 1., 1., 0., 1., 0., 1., 1., 1., 1., 1., 0.]))"
+knapsack_n14_seed18,BranchAndBound,0.011450332996901125,"(32.0, array([ 0.,  1.,  0.,  1.,  1.,  1.,  1.,  1.,  0.,  0., -0.,  1., -0.,
+       -0.]))"
+knapsack_n14_seed18,GomoryCuttingPlane,0.0006502910400740802,"(32.0, array([0., 1., 0., 1., 1., 1., 1., 1., 0., 0., 0., 1., 0., 0.]))"
+knapsack_n14_seed19,BranchAndBound,0.000430332962423563,"(22.0, array([ 0.,  1.,  0.,  0., -0.,  1.,  0.,  0.,  0.,  0.,  1.,  0.,  0.,
+        0.]))"
+knapsack_n14_seed19,GomoryCuttingPlane,0.0002883749548345804,"(22.0, array([0., 1., 0., 0., 0., 1., 0., 0., 0., 0., 1., 0., 0., 0.]))"
+knapsack_n15_seed00,BranchAndBound,0.022174208017531782,"(46.0, array([ 0.,  1.,  0.,  0.,  1.,  1., -0.,  1.,  1.,  0.,  1.,  0.,  1.,
+       -0.,  1.]))"
+knapsack_n15_seed00,GomoryCuttingPlane,0.000989916967228055,"(46.0, array([0., 1., 0., 0., 1., 1., 0., 1., 1., 0., 1., 0., 1., 0., 1.]))"
+knapsack_n15_seed01,BranchAndBound,0.00037825002800673246,"(51.0, array([ 1., -0.,  0.,  0.,  1.,  1.,  1.,  1.,  0.,  1.,  1.,  0.,  1.,
+        1.,  0.]))"
+knapsack_n15_seed01,GomoryCuttingPlane,0.0006411669892258942,"(51.0, array([1., 0., 0., 0., 1., 1., 1., 1., 0., 1., 1., 0., 1., 1., 0.]))"
+knapsack_n15_seed02,BranchAndBound,0.03120550001040101,"(49.0, array([ 1., -0.,  1., -0.,  1.,  1., -0., -0., -0.,  1.,  1., -0.,  1.,
+       -0., -0.]))"
+knapsack_n15_seed02,GomoryCuttingPlane,0.02192362502682954,"(49.0, array([1., 0., 1., 0., 1., 1., 0., 0., 0., 1., 1., 0., 1., 0., 0.]))"
+knapsack_n15_seed03,BranchAndBound,0.0005213749827817082,"(47.0, array([1., 0., 1., 1., 0., 0., 1., 0., 1., 0., 1., 0., 0., 0., 1.]))"
+knapsack_n15_seed03,GomoryCuttingPlane,0.04466808296274394,"(47.0, array([1., 0., 1., 1., 0., 0., 1., 0., 1., 0., 1., 0., 1., 0., 0.]))"
+knapsack_n15_seed04,BranchAndBound,0.03683012502733618,"(70.0, array([-0.,  1.,  1.,  1.,  1.,  1., -0.,  1.,  1.,  1., -0.,  1.,  1.,
+        1., -0.]))"
+knapsack_n15_seed04,GomoryCuttingPlane,0.0014000830124132335,"(70.0, array([0., 1., 1., 1., 1., 1., 0., 1., 1., 1., 0., 1., 1., 1., 0.]))"
+knapsack_n15_seed05,BranchAndBound,0.008259624999482185,"(32.0, array([ 0.,  0.,  0.,  1.,  1.,  1.,  1.,  1.,  0.,  0.,  1.,  1., -0.,
+       -0., -0.]))"
+knapsack_n15_seed05,GomoryCuttingPlane,0.0014148749760352075,"(32.0, array([0., 0., 0., 1., 1., 1., 1., 1., 0., 0., 1., 1., 0., 0., 0.]))"
+knapsack_n15_seed06,BranchAndBound,0.008946625050157309,"(76.0, array([ 1., -0.,  1.,  1., -0.,  1., -0.,  1.,  1.,  1.,  1.,  1.,  1.,
+        1.,  1.]))"
+knapsack_n15_seed06,GomoryCuttingPlane,0.0013706249883398414,"(76.0, array([1., 0., 1., 1., 0., 1., 0., 1., 1., 1., 1., 1., 1., 1., 1.]))"
+knapsack_n15_seed07,BranchAndBound,0.00038766703801229596,"(54.0, array([ 0.,  1.,  0., -0.,  1.,  1.,  1.,  1.,  0.,  0.,  1.,  1.,  0.,
+        1.,  1.]))"
+knapsack_n15_seed07,GomoryCuttingPlane,0.0007309159846045077,"(54.0, array([0., 1., 0., 0., 1., 1., 1., 1., 0., 0., 1., 1., 0., 1., 1.]))"
+knapsack_n15_seed08,BranchAndBound,0.04477670800406486,"(55.0, array([ 1., -0.,  1., -0.,  1.,  1.,  1., -0.,  1.,  1., -0., -0., -0.,
+        1., -0.]))"
+knapsack_n15_seed08,GomoryCuttingPlane,0.001321582996752113,"(55.0, array([1., 0., 1., 0., 1., 1., 1., 0., 1., 1., 0., 0., 0., 1., 0.]))"
+knapsack_n15_seed09,BranchAndBound,0.046724541985895485,"(64.0, array([-0.,  1.,  1.,  1., -0.,  1., -0.,  1.,  1.,  1.,  1., -0.,  1.,
+        1., -0.]))"
+knapsack_n15_seed09,GomoryCuttingPlane,0.002692334004677832,"(64.0, array([0., 1., 1., 1., 0., 1., 0., 1., 1., 1., 1., 0., 1., 1., 0.]))"
+knapsack_n15_seed10,BranchAndBound,0.032391374988947064,"(42.0, array([ 1., -0., -0.,  1.,  1., -0.,  1.,  1., -0.,  1.,  1.,  1.,  1.,
+       -0., -0.]))"
+knapsack_n15_seed10,GomoryCuttingPlane,0.0038077079807408154,"(42.0, array([1., 0., 0., 1., 1., 0., 1., 1., 0., 1., 1., 1., 1., 0., 0.]))"
+knapsack_n15_seed11,BranchAndBound,0.005845042003784329,"(41.0, array([ 1.,  1.,  1.,  0.,  0., -0.,  0.,  0., -0.,  1., -0.,  1., -0.,
+        1.,  0.]))"
+knapsack_n15_seed11,GomoryCuttingPlane,0.001270791981369257,"(41.0, array([1., 1., 1., 0., 0., 0., 0., 0., 0., 1., 0., 1., 0., 1., 0.]))"
+knapsack_n15_seed12,BranchAndBound,0.02932937501464039,"(41.0, array([-0.,  1., -0.,  1., -0., -0.,  1.,  1.,  1., -0., -0., -0., -0.,
+        1., -0.]))"
+knapsack_n15_seed12,GomoryCuttingPlane,0.0035756659926846623,"(41.0, array([0., 1., 0., 1., 0., 0., 1., 1., 1., 0., 0., 0., 0., 1., 0.]))"
+knapsack_n15_seed13,BranchAndBound,0.008114791999105364,"(37.0, array([ 0.,  0.,  1.,  0.,  1.,  1.,  0.,  0., -0.,  0.,  1.,  1.,  0.,
+        0.,  0.]))"
+knapsack_n15_seed13,GomoryCuttingPlane,0.023216124973259866,fail: ValueError: Initial tableau is not primal feasible. Use TwoPhaseSimplex for problems with negative right-hand side values.
+knapsack_n15_seed14,BranchAndBound,0.005930499988608062,"(22.0, array([ 0.,  1.,  0.,  0.,  1., -0.,  0.,  0.,  0.,  0.,  0.,  1.,  1.,
+        0.,  0.]))"
+knapsack_n15_seed14,GomoryCuttingPlane,0.04921737499535084,"(19.0, array([0., 1., 1., 0., 1., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0.]))"
+knapsack_n15_seed15,BranchAndBound,0.06067570799496025,"(42.0, array([-0., -0., -0., -0.,  1.,  1.,  1.,  1., -0., -0., -0.,  1.,  1.,
+       -0.,  1.]))"
+knapsack_n15_seed15,GomoryCuttingPlane,0.04916462500113994,"(46.0, array([0., 1., 0., 0., 1., 1., 0., 1., 0., 0., 0., 1., 1., 0., 1.]))"
+knapsack_n15_seed16,BranchAndBound,0.001548792002722621,"(60.0, array([ 0.,  1.,  1., -0.,  0.,  1.,  1.,  0.,  1.,  1.,  1.,  1.,  1.,
+        1.,  1.]))"
+knapsack_n15_seed16,GomoryCuttingPlane,0.001205707958433777,"(60.0, array([0., 1., 1., 0., 0., 1., 1., 0., 1., 1., 1., 1., 1., 1., 1.]))"
+knapsack_n15_seed17,BranchAndBound,0.006425542000215501,"(48.0, array([ 0.,  0.,  1.,  0.,  1.,  1.,  0.,  1.,  0.,  1.,  0.,  1., -0.,
+        0.,  1.]))"
+knapsack_n15_seed17,GomoryCuttingPlane,0.002017792023252696,"(48.0, array([0., 0., 1., 0., 1., 1., 0., 1., 0., 0., 0., 1., 1., 0., 1.]))"
+knapsack_n15_seed18,BranchAndBound,0.02425858296919614,"(60.0, array([ 1., -0.,  1., -0.,  1.,  1.,  1.,  1.,  1.,  1.,  1.,  0.,  1.,
+        1., -0.]))"
+knapsack_n15_seed18,GomoryCuttingPlane,0.0011336670140735805,"(60.0, array([1., 0., 1., 0., 1., 1., 1., 1., 1., 1., 1., 0., 1., 1., 0.]))"
+knapsack_n15_seed19,BranchAndBound,0.020271874964237213,"(52.0, array([ 1., -0.,  1.,  1.,  1.,  1.,  1.,  1.,  1.,  0.,  0.,  1., -0.,
+       -0.,  0.]))"
+knapsack_n15_seed19,GomoryCuttingPlane,0.001156166021246463,"(52.0, array([1., 0., 1., 1., 1., 1., 1., 1., 1., 0., 0., 1., 0., 0., 0.]))"
+knapsack_n16_seed00,BranchAndBound,0.0829984589945525,"(42.0, array([-0., -0., -0.,  1., -0.,  1.,  1., -0., -0., -0.,  1.,  1., -0.,
+       -0., -0.,  1.]))"
+knapsack_n16_seed00,GomoryCuttingPlane,0.05198658298468217,"(42.0, array([0., 0., 0., 1., 0., 1., 1., 0., 0., 0., 1., 1., 0., 0., 0., 1.]))"
+knapsack_n16_seed01,BranchAndBound,0.038795707980170846,"(47.0, array([ 0.,  1.,  1.,  1.,  1., -0.,  0.,  1., -0., -0.,  1., -0.,  1.,
+        1., -0.,  0.]))"
+knapsack_n16_seed01,GomoryCuttingPlane,0.0021715830080211163,"(47.0, array([0., 1., 1., 1., 1., 0., 0., 1., 0., 0., 1., 0., 1., 1., 0., 0.]))"
+knapsack_n16_seed02,BranchAndBound,0.01486724999267608,"(72.0, array([ 1.,  1., -0., -0.,  1., -0.,  1.,  1.,  1., -0.,  1.,  1.,  1.,
+        1., -0.,  1.]))"
+knapsack_n16_seed02,GomoryCuttingPlane,0.007921542041003704,"(72.0, array([1., 1., 0., 0., 1., 0., 1., 1., 1., 0., 1., 1., 1., 1., 0., 1.]))"
+knapsack_n16_seed03,BranchAndBound,0.007094208034686744,"(39.0, array([ 1.,  1.,  0.,  0.,  0., -0.,  0.,  1.,  0.,  0.,  1.,  1.,  0.,
+        0.,  1.,  0.]))"
+knapsack_n16_seed03,GomoryCuttingPlane,0.062320708006154746,"(39.0, array([1., 1., 1., 0., 0., 1., 0., 1., 0., 0., 0., 1., 0., 0., 1., 0.]))"
+knapsack_n16_seed04,BranchAndBound,0.018416957987938076,"(59.0, array([0., 1., 1., 0., 1., 1., 0., 1., 1., 0., 0., 1., 0., 1., 0., 1.]))"
+knapsack_n16_seed04,GomoryCuttingPlane,0.053533416998106986,"(58.0, array([0., 1., 1., 0., 1., 0., 1., 1., 1., 0., 0., 1., 0., 1., 0., 1.]))"
+knapsack_n16_seed05,BranchAndBound,0.0034575419849716127,"(45.0, array([ 1.,  0.,  0.,  1.,  1.,  1.,  1.,  1.,  1.,  1.,  0.,  0.,  0.,
+        1.,  0., -0.]))"
+knapsack_n16_seed05,GomoryCuttingPlane,0.0012779999524354935,"(45.0, array([1., 1., 0., 1., 1., 0., 1., 1., 1., 1., 0., 0., 0., 1., 0., 1.]))"
+knapsack_n16_seed06,BranchAndBound,0.0006692080060020089,"(50.0, array([ 0.,  1.,  1.,  0.,  1.,  1.,  1.,  0.,  0.,  0.,  0.,  0.,  1.,
+        1.,  1., -0.]))"
+knapsack_n16_seed06,GomoryCuttingPlane,0.0007539159851148725,"(50.0, array([0., 1., 1., 0., 1., 1., 1., 0., 0., 0., 0., 0., 1., 1., 1., 0.]))"
+knapsack_n16_seed07,BranchAndBound,0.08459420799044892,"(56.0, array([ 1.,  0., -0.,  0.,  1.,  1.,  0.,  1.,  1.,  0.,  1.,  1.,  1.,
+        0.,  1.,  1.]))"
+knapsack_n16_seed07,GomoryCuttingPlane,0.002373625000473112,"(56.0, array([1., 0., 1., 0., 1., 1., 0., 1., 1., 0., 1., 1., 0., 0., 1., 1.]))"
+knapsack_n16_seed08,BranchAndBound,0.048036833002697676,"(60.0, array([ 1., -0., -0.,  1., -0.,  1.,  1.,  1., -0., -0., -0.,  1., -0.,
+        1., -0.,  1.]))"
+knapsack_n16_seed08,GomoryCuttingPlane,0.001338832953479141,"(60.0, array([1., 0., 0., 1., 0., 1., 1., 1., 0., 0., 0., 1., 0., 1., 0., 1.]))"
+knapsack_n16_seed09,BranchAndBound,0.04049033299088478,"(52.0, array([-0.,  1.,  1.,  1.,  1.,  1.,  1., -0.,  1., -0.,  1., -0., -0.,
+        1., -0., -0.]))"
+knapsack_n16_seed09,GomoryCuttingPlane,0.05257183400681242,"(50.0, array([0., 1., 0., 1., 1., 0., 1., 0., 1., 1., 1., 0., 1., 1., 0., 0.]))"
+knapsack_n16_seed10,BranchAndBound,0.009739000000990927,"(42.0, array([ 0.,  0.,  1.,  1., -0.,  1.,  1.,  1., -0.,  0.,  0.,  1.,  0.,
+        1., -0.,  1.]))"
+knapsack_n16_seed10,GomoryCuttingPlane,0.0017817500047385693,"(42.0, array([0., 0., 1., 1., 0., 1., 1., 1., 0., 0., 0., 1., 0., 1., 0., 1.]))"
+knapsack_n16_seed11,BranchAndBound,0.04223525000270456,"(28.0, array([-0.,  1.,  1., -0.,  1., -0., -0.,  1., -0., -0., -0., -0., -0.,
+       -0.,  1., -0.]))"
+knapsack_n16_seed11,GomoryCuttingPlane,0.06746070901863277,"(25.0, array([0., 1., 1., 0., 1., 1., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0.]))"
+knapsack_n16_seed12,BranchAndBound,0.01597212499473244,"(43.0, array([ 0.,  0.,  0.,  0.,  1., -0.,  1., -0.,  1.,  1.,  0.,  1.,  1.,
+        0.,  1.,  1.]))"
+knapsack_n16_seed12,GomoryCuttingPlane,0.04724683304084465,"(43.0, array([0., 0., 0., 0., 1., 0., 1., 0., 1., 1., 0., 1., 1., 0., 1., 1.]))"
+knapsack_n16_seed13,BranchAndBound,0.03021554200677201,"(45.0, array([ 1.,  0.,  1.,  0.,  1., -0.,  1.,  1.,  0.,  0.,  1., -0.,  1.,
+        0., -0., -0.]))"
+knapsack_n16_seed13,GomoryCuttingPlane,0.04558979201829061,"(47.0, array([1., 0., 0., 0., 1., 1., 1., 1., 0., 0., 1., 0., 1., 0., 0., 0.]))"
+knapsack_n16_seed14,BranchAndBound,0.008781582990195602,"(83.0, array([ 0.,  0.,  1.,  0.,  1.,  1.,  1.,  1.,  1.,  1., -0.,  1.,  0.,
+        1.,  1.,  1.]))"
+knapsack_n16_seed14,GomoryCuttingPlane,0.0014410829753614962,"(83.0, array([0., 0., 1., 0., 1., 1., 1., 1., 1., 1., 1., 0., 0., 1., 1., 1.]))"
+knapsack_n16_seed15,BranchAndBound,0.019745333993341774,"(56.0, array([-0., -0., -0.,  1., -0., -0.,  1.,  1., -0.,  1.,  1.,  1.,  1.,
+       -0.,  1., -0.]))"
+knapsack_n16_seed15,GomoryCuttingPlane,0.007219791004899889,"(56.0, array([0., 0., 0., 1., 0., 0., 1., 1., 0., 1., 1., 1., 1., 0., 1., 0.]))"
+knapsack_n16_seed16,BranchAndBound,0.034174582979176193,"(61.0, array([ 1., -0.,  1.,  1., -0., -0., -0.,  1.,  1.,  1., -0.,  1., -0.,
+       -0.,  1., -0.]))"
+knapsack_n16_seed16,GomoryCuttingPlane,0.015637833974324167,"(61.0, array([1., 0., 1., 1., 0., 0., 0., 1., 1., 1., 0., 1., 0., 0., 1., 0.]))"
+knapsack_n16_seed17,BranchAndBound,0.03850445803254843,"(40.0, array([-0.,  1., -0.,  1., -0.,  1.,  1., -0., -0., -0.,  1.,  1., -0.,
+       -0., -0.,  1.]))"
+knapsack_n16_seed17,GomoryCuttingPlane,0.038678792014252394,"(41.0, array([0., 1., 0., 1., 0., 1., 1., 1., 0., 0., 1., 1., 0., 0., 1., 0.]))"
+knapsack_n16_seed18,BranchAndBound,0.000589250004850328,"(56.0, array([0., 0., 0., 0., 0., 1., 1., 0., 1., 1., 1., 1., 1., 1., 0., 1.]))"
+knapsack_n16_seed18,GomoryCuttingPlane,0.0006790839834138751,"(56.0, array([0., 1., 0., 0., 0., 1., 1., 0., 1., 1., 1., 1., 0., 1., 0., 1.]))"
+knapsack_n16_seed19,BranchAndBound,0.003319290990475565,"(58.0, array([ 1.,  0.,  0.,  0.,  1.,  0.,  1.,  1.,  0.,  1.,  1., -0.,  1.,
+       -0.,  0.,  1.]))"
+knapsack_n16_seed19,GomoryCuttingPlane,0.0017709580133669078,"(58.0, array([1., 0., 0., 0., 1., 0., 1., 1., 0., 1., 1., 0., 1., 0., 0., 1.]))"
+knapsack_n17_seed00,BranchAndBound,0.00045245897490531206,"(56.0, array([1., 0., 1., 1., 1., 1., 1., 1., 0., 0., 1., 0., 1., 0., 1., 1., 1.]))"
+knapsack_n17_seed00,GomoryCuttingPlane,0.0011285000364296138,"(56.0, array([1., 1., 1., 1., 1., 1., 1., 1., 0., 0., 1., 0., 0., 0., 0., 1., 1.]))"
+knapsack_n17_seed01,BranchAndBound,0.10269962501479313,"(60.0, array([ 1.,  1.,  1.,  1., -0., -0.,  1., -0., -0., -0.,  1.,  1., -0.,
+        1., -0., -0., -0.]))"
+knapsack_n17_seed01,GomoryCuttingPlane,0.0610785839962773,fail: ValueError: Initial tableau is not primal feasible. Use TwoPhaseSimplex for problems with negative right-hand side values.
+knapsack_n17_seed02,BranchAndBound,0.0006323339766822755,"(32.0, array([ 0.,  0.,  0.,  1.,  0.,  1.,  1.,  0., -0.,  0.,  1.,  0.,  0.,
+        0.,  1.,  0.,  0.]))"
+knapsack_n17_seed02,GomoryCuttingPlane,0.0005725410301238298,"(32.0, array([0., 0., 0., 1., 0., 1., 1., 0., 0., 0., 1., 0., 0., 0., 1., 0., 0.]))"
+knapsack_n17_seed03,BranchAndBound,0.004634167009498924,"(50.0, array([ 1., -0.,  0.,  0.,  0.,  0.,  1.,  0.,  1.,  0.,  0.,  1.,  1.,
+        0.,  1.,  1.,  1.]))"
+knapsack_n17_seed03,GomoryCuttingPlane,0.051914166018832475,"(49.0, array([1., 1., 0., 0., 0., 0., 1., 0., 1., 0., 1., 1., 0., 0., 1., 1., 1.]))"
+knapsack_n17_seed04,BranchAndBound,0.0006414999952539802,"(50.0, array([ 1.,  1.,  0.,  0.,  0.,  1.,  0.,  0.,  0., -0.,  1.,  0.,  1.,
+        1.,  0.,  1.,  0.]))"
+knapsack_n17_seed04,GomoryCuttingPlane,0.0006027920171618462,"(50.0, array([1., 1., 0., 0., 0., 1., 0., 0., 0., 0., 1., 0., 1., 1., 0., 1., 0.]))"
+knapsack_n17_seed05,BranchAndBound,0.043082040967419744,"(54.0, array([ 0.,  0.,  0., -0.,  0.,  1.,  0.,  1.,  1.,  1.,  1.,  1.,  0.,
+        0.,  1.,  1.,  0.]))"
+knapsack_n17_seed05,GomoryCuttingPlane,0.0018367089796811342,"(54.0, array([0., 0., 0., 0., 0., 1., 0., 1., 1., 1., 1., 1., 0., 0., 1., 1., 0.]))"
+knapsack_n17_seed06,BranchAndBound,0.0023843339877203107,"(46.0, array([-0.,  0.,  0.,  1.,  1.,  1.,  0.,  1.,  0.,  1.,  0.,  1.,  0.,
+        0.,  0.,  0.,  1.]))"
+knapsack_n17_seed06,GomoryCuttingPlane,0.0009097500005736947,"(46.0, array([0., 0., 0., 1., 1., 1., 0., 1., 0., 1., 0., 1., 0., 0., 0., 0., 1.]))"
+knapsack_n17_seed07,BranchAndBound,0.0269332499592565,"(61.0, array([ 1., -0.,  1.,  1., -0.,  1.,  1., -0., -0., -0.,  1.,  1., -0.,
+        1.,  1., -0., -0.]))"
+knapsack_n17_seed07,GomoryCuttingPlane,0.00267670804169029,"(61.0, array([1., 0., 1., 1., 0., 1., 1., 0., 0., 0., 1., 1., 0., 1., 1., 0., 0.]))"
+knapsack_n17_seed08,BranchAndBound,0.001366332988254726,"(36.0, array([ 1., -0.,  1.,  0.,  0.,  0.,  1.,  0.,  0.,  0.,  1.,  0.,  1.,
+        0.,  0.,  0.,  0.]))"
+knapsack_n17_seed08,GomoryCuttingPlane,0.0007263750303536654,"(36.0, array([1., 0., 1., 0., 0., 0., 1., 0., 0., 0., 1., 0., 1., 0., 0., 0., 0.]))"
+knapsack_n17_seed09,BranchAndBound,0.05990791699150577,"(80.0, array([ 1.,  1.,  0., -0.,  0.,  1.,  1.,  0.,  1.,  1.,  1.,  1.,  1.,
+       -0.,  1.,  1., -0.]))"
+knapsack_n17_seed09,GomoryCuttingPlane,0.0023204999743029475,"(80.0, array([1., 1., 0., 0., 1., 1., 1., 0., 1., 1., 1., 1., 1., 0., 1., 0., 0.]))"
+knapsack_n17_seed10,BranchAndBound,0.00929474999429658,"(61.0, array([1., 0., 1., 1., 0., 0., 1., 1., 1., 0., 0., 1., 1., 1., 0., 1., 1.]))"
+knapsack_n17_seed10,GomoryCuttingPlane,0.054953458020463586,"(62.0, array([1., 0., 1., 1., 1., 0., 1., 1., 0., 0., 1., 1., 1., 1., 0., 1., 1.]))"
+knapsack_n17_seed11,BranchAndBound,0.03138004103675485,"(59.0, array([ 0.,  1.,  1.,  1.,  1., -0.,  1.,  1., -0.,  1.,  1.,  1., -0.,
+        1.,  1.,  0.,  0.]))"
+knapsack_n17_seed11,GomoryCuttingPlane,0.0019239580142311752,"(59.0, array([0., 1., 1., 1., 1., 0., 1., 1., 0., 1., 1., 1., 0., 1., 1., 0., 0.]))"
+knapsack_n17_seed12,BranchAndBound,0.0004266250180080533,"(61.0, array([ 1.,  1.,  0.,  1.,  0.,  1.,  0.,  0.,  0.,  1.,  1.,  0., -0.,
+        1.,  0.,  1.,  1.]))"
+knapsack_n17_seed12,GomoryCuttingPlane,0.0006520000169984996,"(61.0, array([1., 1., 0., 1., 0., 1., 0., 0., 0., 1., 1., 0., 0., 1., 0., 1., 1.]))"
+knapsack_n17_seed13,BranchAndBound,0.019437332986854017,"(68.0, array([ 1.,  1.,  1., -0., -0.,  1.,  1.,  1., -0., -0., -0.,  1., -0.,
+        1., -0.,  1.,  1.]))"
+knapsack_n17_seed13,GomoryCuttingPlane,0.0021128749940544367,"(68.0, array([1., 1., 1., 1., 0., 1., 0., 1., 0., 0., 0., 1., 0., 1., 0., 1., 1.]))"
+knapsack_n17_seed14,BranchAndBound,0.004246000025887042,"(57.0, array([-0.,  1.,  1.,  0.,  1.,  1.,  0.,  1.,  0.,  1.,  1.,  0.,  0.,
+        0.,  1., -0.,  1.]))"
+knapsack_n17_seed14,GomoryCuttingPlane,0.0007800419698469341,"(57.0, array([0., 1., 1., 0., 1., 1., 0., 1., 0., 1., 1., 0., 0., 0., 1., 0., 1.]))"
+knapsack_n17_seed15,BranchAndBound,0.013805291033349931,"(63.0, array([1., 0., 0., 1., 1., 0., 1., 0., 1., 1., 0., 0., 1., 0., 0., 1., 0.]))"
+knapsack_n17_seed15,GomoryCuttingPlane,0.04354670800967142,fail: ValueError: Initial tableau is not primal feasible. Use TwoPhaseSimplex for problems with negative right-hand side values.
+knapsack_n17_seed16,BranchAndBound,0.0006315420032478869,"(82.0, array([ 1.,  0.,  1.,  1.,  1.,  1.,  1.,  1.,  1.,  1., -0.,  1.,  1.,
+        1.,  0.,  1.,  1.]))"
+knapsack_n17_seed16,GomoryCuttingPlane,0.0010104169487021863,"(82.0, array([1., 0., 1., 1., 1., 1., 1., 1., 1., 1., 0., 1., 1., 1., 0., 1., 1.]))"
+knapsack_n17_seed17,BranchAndBound,0.028383957978803664,"(54.0, array([ 1.,  1.,  0., -0.,  0.,  1.,  1.,  1.,  1.,  0.,  0., -0.,  1.,
+        1.,  1.,  0., -0.]))"
+knapsack_n17_seed17,GomoryCuttingPlane,0.021367874986026436,"(56.0, array([1., 1., 0., 0., 0., 1., 1., 1., 0., 0., 0., 1., 0., 1., 1., 0., 1.]))"
+knapsack_n17_seed18,BranchAndBound,0.020498791011050344,"(59.0, array([1., 1., 1., 0., 1., 1., 1., 0., 1., 0., 0., 1., 1., 1., 0., 0., 0.]))"
+knapsack_n17_seed18,GomoryCuttingPlane,0.0020447500282898545,"(59.0, array([1., 1., 1., 0., 1., 1., 1., 0., 1., 0., 0., 1., 1., 1., 0., 0., 0.]))"
+knapsack_n17_seed19,BranchAndBound,0.0004319160361774266,"(50.0, array([ 0.,  1., -0.,  1.,  1.,  1.,  1.,  0.,  1.,  1.,  0.,  0.,  0.,
+        0.,  0.,  1.,  0.]))"
+knapsack_n17_seed19,GomoryCuttingPlane,0.0005760830244980752,"(50.0, array([0., 1., 0., 1., 1., 1., 1., 0., 1., 1., 0., 0., 0., 0., 0., 1., 0.]))"
+knapsack_n18_seed00,BranchAndBound,0.07497316697845235,"(78.0, array([ 0.,  1., -0.,  1.,  0.,  1.,  1.,  1.,  1.,  0.,  0.,  1.,  0.,
+        1.,  0.,  1.,  1.,  1.]))"
+knapsack_n18_seed00,GomoryCuttingPlane,0.07007808401249349,"(73.0, array([0., 1., 0., 1., 0., 1., 1., 1., 1., 0., 0., 1., 0., 1., 0., 1., 0.,
+       1.]))"
+knapsack_n18_seed01,BranchAndBound,0.016137083002831787,"(92.0, array([ 1.,  1.,  1.,  1.,  1., -0.,  1.,  1.,  1.,  1.,  0., -0.,  1.,
+       -0.,  1.,  1., -0.,  1.]))"
+knapsack_n18_seed01,GomoryCuttingPlane,0.044725791027303785,"(91.0, array([1., 1., 1., 1., 1., 0., 1., 1., 1., 1., 0., 0., 0., 0., 1., 1., 0.,
+       1.]))"
+knapsack_n18_seed02,BranchAndBound,0.06690937501844019,"(74.0, array([ 1.,  1.,  0.,  0., -0.,  1.,  1.,  1.,  1.,  1.,  1.,  1.,  0.,
+       -0.,  1.,  1.,  1.,  1.]))"
+knapsack_n18_seed02,GomoryCuttingPlane,0.0015948750078678131,"(73.0, array([1., 1., 0., 0., 0., 1., 1., 1., 1., 1., 1., 0., 0., 1., 1., 1., 1.,
+       0.]))"
+knapsack_n18_seed03,BranchAndBound,0.00808704097289592,"(75.0, array([0., 1., 0., 1., 1., 0., 1., 1., 1., 1., 1., 0., 1., 1., 1., 1., 1.,
+       0.]))"
+knapsack_n18_seed03,GomoryCuttingPlane,0.0017379579949192703,"(75.0, array([0., 1., 0., 1., 1., 1., 1., 1., 1., 1., 1., 0., 0., 1., 1., 1., 1.,
+       0.]))"
+knapsack_n18_seed04,BranchAndBound,0.0004497080226428807,"(56.0, array([1., 1., 1., 0., 0., 1., 0., 0., 1., 1., 0., 0., 1., 0., 1., 1., 1.,
+       1.]))"
+knapsack_n18_seed04,GomoryCuttingPlane,0.0010655829682946205,"(56.0, array([1., 1., 1., 0., 0., 1., 0., 0., 1., 1., 0., 0., 1., 0., 1., 1., 1.,
+       1.]))"
+knapsack_n18_seed05,BranchAndBound,0.006350874959025532,"(28.0, array([ 1.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  1.,  0.,  0.,  0.,
+        0.,  0.,  1., -0.,  1.]))"
+knapsack_n18_seed05,GomoryCuttingPlane,0.0022476669983007014,"(28.0, array([1., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 1., 0.,
+       1.]))"
+knapsack_n18_seed06,BranchAndBound,0.00042570801451802254,"(45.0, array([0., 1., 1., 1., 1., 0., 0., 1., 1., 0., 1., 0., 1., 0., 0., 0., 0.,
+       0.]))"
+knapsack_n18_seed06,GomoryCuttingPlane,0.0005524579901248217,"(45.0, array([1., 1., 1., 1., 1., 0., 0., 0., 1., 0., 1., 0., 1., 0., 0., 0., 0.,
+       0.]))"
+knapsack_n18_seed07,BranchAndBound,0.027181707962881774,"(62.0, array([ 1.,  1., -0.,  1.,  1.,  1.,  1., -0., -0., -0.,  1., -0., -0.,
+        1.,  1., -0., -0.,  1.]))"
+knapsack_n18_seed07,GomoryCuttingPlane,0.05760979204205796,"(62.0, array([1., 1., 0., 1., 1., 1., 1., 0., 0., 0., 1., 0., 0., 1., 1., 0., 0.,
+       1.]))"
+knapsack_n18_seed08,BranchAndBound,0.0006063749897293746,"(63.0, array([1., 1., 1., 1., 0., 0., 0., 1., 1., 0., 0., 1., 1., 0., 1., 1., 1.,
+       1.]))"
+knapsack_n18_seed08,GomoryCuttingPlane,0.0009413340012542903,"(63.0, array([1., 1., 1., 1., 0., 0., 0., 1., 1., 0., 0., 1., 1., 0., 1., 1., 1.,
+       1.]))"
+knapsack_n18_seed09,BranchAndBound,0.041369708022102714,"(58.0, array([ 0.,  0.,  1.,  0.,  1.,  0.,  0.,  1.,  1.,  1., -0.,  0.,  1.,
+        1.,  0.,  1., -0., -0.]))"
+knapsack_n18_seed09,GomoryCuttingPlane,0.050457082979846746,"(58.0, array([0., 0., 1., 0., 1., 0., 0., 1., 1., 1., 0., 0., 1., 1., 0., 1., 0.,
+       0.]))"
+knapsack_n18_seed10,BranchAndBound,0.005934040993452072,"(57.0, array([ 0.,  0.,  1.,  1.,  1.,  0., -0.,  0.,  0., -0.,  1.,  0.,  1.,
+        0.,  1.,  1.,  1.,  1.]))"
+knapsack_n18_seed10,GomoryCuttingPlane,0.0012486669584177434,"(57.0, array([0., 0., 0., 1., 1., 0., 1., 0., 0., 0., 1., 0., 1., 0., 1., 1., 1.,
+       1.]))"
+knapsack_n18_seed11,BranchAndBound,0.00045074999798089266,"(69.0, array([1., 1., 1., 0., 1., 1., 1., 0., 0., 0., 0., 1., 1., 0., 1., 0., 1.,
+       1.]))"
+knapsack_n18_seed11,GomoryCuttingPlane,0.0013427080120891333,"(69.0, array([1., 1., 1., 0., 1., 1., 1., 0., 0., 0., 0., 1., 1., 1., 1., 0., 0.,
+       1.]))"
+knapsack_n18_seed12,BranchAndBound,0.00043658301001414657,"(57.0, array([ 1.,  0.,  0.,  1.,  0.,  1.,  0.,  0.,  1.,  1.,  0., -0.,  1.,
+        1.,  0.,  0.,  1.,  0.]))"
+knapsack_n18_seed12,GomoryCuttingPlane,0.0006822500145062804,"(57.0, array([1., 0., 0., 1., 0., 1., 0., 0., 1., 1., 0., 0., 1., 1., 0., 0., 1.,
+       0.]))"
+knapsack_n18_seed13,BranchAndBound,0.023583166010212153,"(82.0, array([ 1.,  0.,  1.,  0.,  1.,  1.,  1.,  1.,  0.,  1., -0.,  1.,  0.,
+        1.,  1.,  1.,  1., -0.]))"
+knapsack_n18_seed13,GomoryCuttingPlane,0.030694167013280094,fail: ValueError: Initial tableau is not primal feasible. Use TwoPhaseSimplex for problems with negative right-hand side values.
+knapsack_n18_seed14,BranchAndBound,0.011725208023563027,"(55.0, array([-0.,  1., -0.,  1., -0., -0., -0.,  1.,  1., -0.,  1., -0., -0.,
+       -0.,  1.,  1.,  1., -0.]))"
+knapsack_n18_seed14,GomoryCuttingPlane,0.003993332968093455,"(55.0, array([0., 1., 0., 1., 0., 0., 0., 1., 1., 0., 1., 0., 0., 0., 1., 1., 1.,
+       0.]))"
+knapsack_n18_seed15,BranchAndBound,0.0013809590018354356,"(62.0, array([ 1.,  0.,  1.,  1.,  1.,  1.,  1.,  0.,  1., -0.,  1.,  1.,  1.,
+        0.,  1.,  1.,  1.,  0.]))"
+knapsack_n18_seed15,GomoryCuttingPlane,0.001267958024982363,"(62.0, array([1., 1., 1., 1., 1., 1., 1., 0., 1., 1., 1., 1., 1., 0., 1., 0., 1.,
+       0.]))"
+knapsack_n18_seed16,BranchAndBound,0.008488584018778056,"(49.0, array([0., 0., 0., 0., 1., 1., 0., 0., 1., 1., 1., 1., 0., 0., 1., 1., 0.,
+       1.]))"
+knapsack_n18_seed16,GomoryCuttingPlane,0.004139625001698732,"(49.0, array([0., 0., 0., 0., 1., 1., 0., 0., 1., 1., 1., 1., 0., 0., 1., 1., 0.,
+       1.]))"
+knapsack_n18_seed17,BranchAndBound,0.06632341694785282,"(62.0, array([-0.,  1.,  1.,  1.,  0.,  0.,  1.,  0.,  0.,  1.,  0.,  1.,  1.,
+        1.,  1.,  0.,  0.,  0.]))"
+knapsack_n18_seed17,GomoryCuttingPlane,0.05597124999621883,"(61.0, array([1., 1., 1., 0., 0., 0., 1., 0., 0., 1., 0., 1., 1., 1., 1., 0., 0.,
+       0.]))"
+knapsack_n18_seed18,BranchAndBound,0.03588625002885237,"(85.0, array([ 1.,  1.,  1., -0.,  1.,  0.,  1.,  1.,  1.,  1.,  0.,  1.,  1.,
+        1.,  0.,  0.,  0.,  0.]))"
+knapsack_n18_seed18,GomoryCuttingPlane,0.05988345801597461,"(82.0, array([1., 1., 1., 0., 0., 0., 1., 1., 1., 1., 0., 1., 1., 1., 0., 0., 0.,
+       0.]))"
+knapsack_n18_seed19,BranchAndBound,0.017736166017130017,"(45.0, array([ 0.,  0., -0.,  1.,  1.,  0.,  0.,  1.,  0.,  1.,  1.,  1.,  1.,
+        0.,  0.,  0.,  1.,  0.]))"
+knapsack_n18_seed19,GomoryCuttingPlane,0.00554479198763147,"(45.0, array([0., 0., 0., 1., 1., 0., 0., 1., 0., 1., 1., 1., 1., 0., 0., 0., 1.,
+       0.]))"
+knapsack_n19_seed00,BranchAndBound,0.0005163330351933837,"(58.0, array([ 1.,  1.,  0.,  1.,  0.,  0.,  1.,  1.,  0.,  1.,  1.,  1.,  0.,
+        0., -0.,  0.,  0.,  1.,  1.]))"
+knapsack_n19_seed00,GomoryCuttingPlane,0.0009221250074915588,"(58.0, array([1., 1., 0., 1., 0., 0., 1., 1., 0., 1., 1., 1., 0., 0., 0., 0., 0.,
+       1., 1.]))"
+knapsack_n19_seed01,BranchAndBound,0.00045995903201401234,"(63.0, array([ 1.,  1.,  1.,  0.,  1.,  1.,  0.,  0.,  1.,  1.,  1.,  1.,  0.,
+        1.,  0.,  1.,  0.,  0., -0.]))"
+knapsack_n19_seed01,GomoryCuttingPlane,0.0009933750261552632,"(63.0, array([1., 1., 1., 0., 1., 1., 0., 0., 1., 1., 1., 1., 0., 1., 0., 1., 0.,
+       0., 0.]))"
+knapsack_n19_seed02,BranchAndBound,0.006745207996573299,"(51.0, array([-0.,  1.,  0.,  0.,  1.,  1.,  0.,  0.,  1.,  1.,  0.,  1.,  0.,
+        1.,  1.,  0.,  0.,  1.,  1.]))"
+knapsack_n19_seed02,GomoryCuttingPlane,0.04601020901463926,fail: ValueError: Initial tableau is not primal feasible. Use TwoPhaseSimplex for problems with negative right-hand side values.
+knapsack_n19_seed03,BranchAndBound,0.0017368329572491348,"(60.0, array([ 1., -0.,  0.,  1.,  0.,  1.,  0.,  0.,  0.,  1.,  1.,  0.,  1.,
+        1.,  1.,  1.,  0.,  1.,  1.]))"
+knapsack_n19_seed03,GomoryCuttingPlane,0.001055208034813404,"(60.0, array([1., 0., 0., 1., 0., 1., 0., 0., 0., 1., 1., 0., 1., 1., 1., 1., 0.,
+       1., 1.]))"
+knapsack_n19_seed04,BranchAndBound,0.02714466699399054,"(44.0, array([ 1., -0.,  1., -0.,  1.,  0.,  1.,  0.,  0.,  0., -0.,  1., -0.,
+       -0.,  1.,  0., -0.,  0.,  1.]))"
+knapsack_n19_seed04,GomoryCuttingPlane,0.04621991596650332,"(42.0, array([1., 0., 1., 0., 1., 0., 1., 0., 0., 0., 0., 1., 1., 0., 1., 0., 0.,
+       0., 0.]))"
+knapsack_n19_seed05,BranchAndBound,0.040826666983775795,"(61.0, array([-0., -0.,  1., -0., -0.,  1.,  1., -0., -0.,  1.,  1.,  1.,  1.,
+       -0., -0.,  1.,  1.,  1., -0.]))"
+knapsack_n19_seed05,GomoryCuttingPlane,0.05299312499118969,"(61.0, array([0., 0., 1., 0., 1., 1., 1., 0., 0., 1., 1., 1., 1., 1., 0., 1., 0.,
+       1., 0.]))"
+knapsack_n19_seed06,BranchAndBound,0.015253417019266635,"(78.0, array([ 1.,  1.,  1.,  1.,  0.,  1.,  1.,  1., -0.,  1.,  1.,  0.,  1.,
+        1.,  1.,  1., -0.,  1.,  1.]))"
+knapsack_n19_seed06,GomoryCuttingPlane,0.0018082919996231794,"(78.0, array([1., 1., 1., 1., 0., 1., 1., 1., 0., 1., 1., 0., 1., 1., 1., 1., 0.,
+       1., 1.]))"
+knapsack_n19_seed07,BranchAndBound,0.000449584040325135,"(76.0, array([1., 0., 1., 0., 1., 1., 0., 0., 1., 1., 1., 0., 1., 1., 0., 1., 0.,
+       1., 1.]))"
+knapsack_n19_seed07,GomoryCuttingPlane,0.00131929200142622,"(76.0, array([1., 0., 1., 0., 1., 1., 0., 0., 1., 1., 1., 0., 1., 1., 0., 1., 0.,
+       1., 1.]))"
+knapsack_n19_seed08,BranchAndBound,0.33703845797572285,"(57.0, array([ 0.,  0., -0.,  1.,  0.,  0.,  1.,  0.,  1.,  1.,  1.,  0.,  1.,
+        1.,  1.,  0.,  0.,  0.,  1.]))"
+knapsack_n19_seed08,GomoryCuttingPlane,0.10749720799503848,"(60.0, array([0., 0., 1., 1., 1., 0., 1., 0., 0., 1., 1., 0., 1., 1., 1., 0., 0.,
+       0., 1.]))"
+knapsack_n19_seed09,BranchAndBound,0.041649124992545694,"(66.0, array([ 1.,  1.,  1.,  1.,  1.,  0., -0.,  0.,  0.,  1.,  1.,  0., -0.,
+       -0.,  0.,  1.,  1.,  0., -0.]))"
+knapsack_n19_seed09,GomoryCuttingPlane,0.0030790840392000973,"(66.0, array([1., 1., 1., 1., 1., 0., 0., 0., 0., 1., 1., 0., 0., 0., 0., 1., 1.,
+       0., 0.]))"
+knapsack_n19_seed10,BranchAndBound,0.021843291993718594,"(55.0, array([-0., -0.,  1.,  1., -0., -0., -0.,  1.,  1.,  1.,  1.,  1.,  1.,
+       -0., -0., -0.,  1., -0.,  1.]))"
+knapsack_n19_seed10,GomoryCuttingPlane,0.058778374979738146,"(58.0, array([1., 0., 1., 1., 0., 0., 1., 1., 1., 1., 1., 1., 1., 0., 0., 0., 1.,
+       0., 1.]))"
+knapsack_n19_seed11,BranchAndBound,0.01672254200093448,"(74.0, array([ 1., -0.,  1., -0.,  1.,  1., -0., -0.,  1.,  1.,  1.,  1.,  1.,
+       -0., -0.,  1.,  1., -0., -0.]))"
+knapsack_n19_seed11,GomoryCuttingPlane,0.002870666969101876,"(74.0, array([1., 0., 1., 0., 1., 1., 0., 0., 1., 1., 1., 1., 1., 0., 0., 1., 1.,
+       0., 0.]))"
+knapsack_n19_seed12,BranchAndBound,0.008158207987435162,"(67.0, array([-0.,  1.,  1.,  1.,  0.,  0.,  0.,  1.,  0.,  1.,  1.,  1.,  0.,
+        0.,  1.,  0.,  1.,  0.,  0.]))"
+knapsack_n19_seed12,GomoryCuttingPlane,0.012218499963637441,"(67.0, array([0., 1., 1., 1., 0., 0., 0., 1., 0., 1., 1., 1., 0., 0., 1., 0., 1.,
+       0., 0.]))"
+knapsack_n19_seed13,BranchAndBound,0.033282792021054775,"(77.0, array([ 1., -0., -0.,  1., -0., -0.,  1.,  1.,  1.,  1.,  1.,  1.,  1.,
+        1., -0., -0.,  1.,  1., -0.]))"
+knapsack_n19_seed13,GomoryCuttingPlane,0.007423957984428853,"(77.0, array([1., 0., 0., 1., 0., 0., 1., 1., 1., 1., 1., 1., 1., 1., 0., 0., 1.,
+       1., 0.]))"
+knapsack_n19_seed14,BranchAndBound,0.04779937502462417,"(72.0, array([-0.,  1., -0.,  1.,  1., -0., -0.,  1.,  1., -0.,  1., -0.,  1.,
+       -0.,  1.,  1., -0., -0.,  1.]))"
+knapsack_n19_seed14,GomoryCuttingPlane,0.06680224998854101,"(72.0, array([0., 1., 0., 1., 1., 0., 0., 1., 1., 0., 1., 0., 1., 0., 1., 1., 0.,
+       0., 1.]))"
+knapsack_n19_seed15,BranchAndBound,0.0006609999691136181,"(59.0, array([ 0.,  1.,  1., -0.,  0.,  1.,  1.,  1.,  1.,  1.,  1.,  0.,  0.,
+        1.,  0.,  0.,  0.,  0.,  1.]))"
+knapsack_n19_seed15,GomoryCuttingPlane,0.0008523750002495944,"(59.0, array([0., 1., 1., 0., 0., 1., 1., 1., 1., 1., 1., 0., 0., 1., 0., 0., 0.,
+       0., 1.]))"
+knapsack_n19_seed16,BranchAndBound,0.0005174160469323397,"(36.0, array([ 0.,  1.,  0.,  1.,  1.,  0.,  0., -0.,  0.,  0.,  1.,  0.,  1.,
+        0.,  1.,  0.,  0.,  0.,  0.]))"
+knapsack_n19_seed16,GomoryCuttingPlane,0.0011036669602617621,"(36.0, array([0., 1., 0., 1., 1., 0., 0., 0., 0., 0., 1., 0., 1., 0., 1., 0., 0.,
+       0., 0.]))"
+knapsack_n19_seed17,BranchAndBound,0.014858209004160017,"(56.0, array([-0.,  1.,  1.,  1.,  1.,  1.,  0.,  0.,  0.,  0.,  1.,  0.,  1.,
+        1.,  0.,  0.,  0.,  0.,  1.]))"
+knapsack_n19_seed17,GomoryCuttingPlane,0.002286457980517298,"(56.0, array([0., 1., 1., 1., 1., 1., 0., 0., 0., 0., 1., 0., 1., 1., 0., 0., 0.,
+       0., 1.]))"
+knapsack_n19_seed18,BranchAndBound,0.003987582982517779,"(68.0, array([ 0.,  0.,  1.,  1.,  1.,  0.,  1.,  1., -0.,  1.,  1.,  1.,  0.,
+        0.,  0.,  0.,  0.,  0.,  1.]))"
+knapsack_n19_seed18,GomoryCuttingPlane,0.002724874997511506,"(68.0, array([0., 0., 1., 1., 1., 0., 1., 1., 0., 1., 1., 1., 0., 0., 0., 0., 0.,
+       0., 1.]))"
+knapsack_n19_seed19,BranchAndBound,0.04078079201281071,"(69.0, array([ 1., -0.,  1.,  1., -0., -0.,  1., -0., -0.,  1., -0.,  1.,  1.,
+       -0.,  1.,  1.,  1., -0., -0.]))"
+knapsack_n19_seed19,GomoryCuttingPlane,0.0035477079800330102,"(69.0, array([1., 0., 0., 1., 0., 0., 1., 0., 0., 1., 0., 1., 1., 1., 1., 1., 1.,
+       0., 1.]))"
+knapsack_n20_seed00,BranchAndBound,0.0006357499514706433,"(65.0, array([1., 1., 1., 0., 1., 1., 0., 1., 1., 1., 0., 1., 0., 0., 0., 0., 1.,
+       0., 1., 0.]))"
+knapsack_n20_seed00,GomoryCuttingPlane,0.001271958986762911,"(65.0, array([1., 1., 1., 0., 1., 1., 1., 1., 1., 1., 0., 1., 0., 0., 0., 0., 1.,
+       0., 0., 0.]))"
+knapsack_n20_seed01,BranchAndBound,0.001530707988422364,"(70.0, array([0., 0., 0., 0., 1., 0., 0., 1., 1., 1., 1., 1., 0., 1., 1., 0., 1.,
+       1., 1., 0.]))"
+knapsack_n20_seed01,GomoryCuttingPlane,0.0020287499646656215,"(70.0, array([0., 0., 0., 0., 1., 0., 0., 1., 1., 1., 1., 1., 0., 1., 1., 0., 1.,
+       1., 1., 0.]))"
+knapsack_n20_seed02,BranchAndBound,0.06815204204758629,"(63.0, array([ 0.,  1.,  1.,  1.,  0.,  1.,  1.,  0.,  1., -0.,  1., -0.,  1.,
+        1.,  0.,  0.,  0.,  1.,  0.,  1.]))"
+knapsack_n20_seed02,GomoryCuttingPlane,0.06652920896885917,"(64.0, array([0., 1., 1., 1., 0., 1., 1., 0., 1., 1., 1., 0., 1., 1., 0., 0., 0.,
+       0., 0., 1.]))"
+knapsack_n20_seed03,BranchAndBound,0.0008624579641036689,"(72.0, array([ 1.,  0.,  1.,  0.,  0.,  1., -0.,  1.,  1.,  0.,  1.,  0.,  0.,
+        1.,  1.,  1.,  0.,  1.,  1.,  1.]))"
+knapsack_n20_seed03,GomoryCuttingPlane,0.001143834029790014,"(72.0, array([1., 0., 1., 0., 0., 1., 0., 1., 1., 0., 1., 0., 0., 1., 1., 1., 0.,
+       1., 1., 1.]))"
+knapsack_n20_seed04,BranchAndBound,0.04559495800640434,"(83.0, array([ 1.,  0.,  0.,  0.,  1.,  1.,  1.,  1., -0.,  1.,  1., -0.,  1.,
+        0.,  1.,  0.,  1., -0.,  1.,  1.]))"
+knapsack_n20_seed04,GomoryCuttingPlane,0.005309749976731837,"(67.0, array([0., 0., 0., 0., 1., 1., 1., 0., 1., 1., 0., 0., 1., 0., 0., 0., 1.,
+       0., 1., 1.]))"
+knapsack_n20_seed05,BranchAndBound,0.031989790964871645,"(70.0, array([ 1., -0.,  1.,  1.,  1.,  1.,  1., -0.,  1., -0., -0., -0., -0.,
+        1., -0.,  1., -0., -0.,  1.,  1.]))"
+knapsack_n20_seed05,GomoryCuttingPlane,0.0868700830033049,"(70.0, array([1., 0., 1., 1., 1., 1., 1., 0., 1., 0., 0., 0., 0., 1., 0., 1., 0.,
+       0., 1., 1.]))"
+knapsack_n20_seed06,BranchAndBound,0.0345505410223268,"(59.0, array([-0.,  1., -0.,  1., -0.,  1., -0., -0., -0.,  1.,  1., -0.,  1.,
+        1.,  1., -0.,  1., -0., -0., -0.]))"
+knapsack_n20_seed06,GomoryCuttingPlane,0.03646575001766905,fail: ValueError: Initial tableau is not primal feasible. Use TwoPhaseSimplex for problems with negative right-hand side values.
+knapsack_n20_seed07,BranchAndBound,0.007052582979667932,"(54.0, array([ 0.,  0.,  1.,  1.,  1.,  0.,  1.,  1.,  0.,  0.,  1.,  0.,  1.,
+        1.,  0.,  1., -0.,  1.,  0.,  0.]))"
+knapsack_n20_seed07,GomoryCuttingPlane,0.0012268329737707973,"(54.0, array([0., 0., 1., 1., 1., 0., 1., 1., 0., 0., 1., 0., 1., 1., 0., 1., 0.,
+       1., 0., 0.]))"
+knapsack_n20_seed08,BranchAndBound,0.0004188339808024466,"(55.0, array([0., 0., 1., 1., 1., 0., 0., 0., 1., 0., 1., 1., 0., 0., 0., 0., 0.,
+       0., 1., 1.]))"
+knapsack_n20_seed08,GomoryCuttingPlane,0.0009348340099677444,"(55.0, array([0., 0., 1., 1., 1., 0., 1., 0., 1., 0., 1., 1., 0., 0., 0., 0., 0.,
+       0., 1., 0.]))"
+knapsack_n20_seed09,BranchAndBound,0.041939958988223225,"(73.0, array([ 1., -0.,  1., -0.,  1.,  1., -0., -0.,  1.,  1., -0.,  1., -0.,
+       -0.,  1.,  1.,  1.,  1.,  1.,  1.]))"
+knapsack_n20_seed09,GomoryCuttingPlane,0.051786999974865466,"(76.0, array([1., 0., 0., 0., 1., 1., 1., 0., 1., 1., 0., 1., 0., 1., 1., 1., 1.,
+       1., 1., 1.]))"
+knapsack_n20_seed10,BranchAndBound,0.0006435830146074295,"(68.0, array([1., 1., 0., 0., 1., 0., 0., 0., 1., 0., 0., 1., 1., 1., 1., 1., 1.,
+       0., 0., 0.]))"
+knapsack_n20_seed10,GomoryCuttingPlane,0.000819833017885685,"(68.0, array([1., 1., 0., 0., 1., 0., 0., 0., 1., 0., 1., 1., 1., 0., 1., 1., 1.,
+       0., 0., 0.]))"
+knapsack_n20_seed11,BranchAndBound,0.0004622499691322446,"(59.0, array([ 1.,  1.,  0.,  0.,  0.,  1.,  0.,  0.,  1.,  0.,  0.,  1.,  1.,
+        1.,  0.,  0.,  0.,  0.,  1., -0.]))"
+knapsack_n20_seed11,GomoryCuttingPlane,0.0008988750050775707,"(59.0, array([1., 1., 0., 0., 0., 1., 0., 0., 1., 0., 0., 1., 1., 1., 0., 0., 0.,
+       0., 1., 0.]))"
+knapsack_n20_seed12,BranchAndBound,0.007362375035881996,"(68.0, array([ 1.,  1.,  0.,  1.,  1.,  1.,  1.,  0.,  0.,  0.,  1.,  1.,  0.,
+       -0., -0.,  0.,  1.,  1., -0.,  1.]))"
+knapsack_n20_seed12,GomoryCuttingPlane,0.0018272500019520521,"(68.0, array([1., 1., 0., 1., 1., 1., 1., 0., 0., 0., 1., 1., 0., 0., 0., 0., 1.,
+       1., 0., 1.]))"
+knapsack_n20_seed13,BranchAndBound,0.03436395799508318,"(60.0, array([ 1.,  1.,  1.,  0.,  1.,  1.,  0.,  1.,  1.,  0.,  0.,  0.,  0.,
+        1.,  0., -0., -0.,  0.,  0.,  0.]))"
+knapsack_n20_seed13,GomoryCuttingPlane,0.0008571670041419566,"(60.0, array([1., 1., 1., 0., 1., 1., 0., 1., 1., 0., 0., 0., 0., 1., 0., 0., 0.,
+       0., 0., 0.]))"
+knapsack_n20_seed14,BranchAndBound,0.011132250016089529,"(48.0, array([ 0., -0.,  0.,  1.,  0.,  1.,  1.,  1.,  0.,  0.,  0.,  0.,  0.,
+        0.,  1.,  1.,  1., -0.,  1.,  1.]))"
+knapsack_n20_seed14,GomoryCuttingPlane,0.0015106250066310167,"(48.0, array([0., 0., 0., 1., 0., 1., 1., 1., 0., 0., 0., 0., 0., 0., 1., 1., 1.,
+       0., 1., 1.]))"
+knapsack_n20_seed15,BranchAndBound,0.0004710000357590616,"(74.0, array([ 1.,  1.,  1.,  1.,  1.,  1.,  1.,  0.,  0.,  0.,  1.,  0.,  0.,
+        1.,  1.,  0., -0.,  1.,  1.,  1.]))"
+knapsack_n20_seed15,GomoryCuttingPlane,0.0012357920059002936,"(74.0, array([1., 1., 1., 1., 1., 1., 1., 0., 0., 0., 1., 0., 0., 1., 1., 0., 0.,
+       1., 1., 1.]))"
+knapsack_n20_seed16,BranchAndBound,0.06914433400379494,"(77.0, array([ 1.,  1.,  0.,  1.,  1.,  0., -0.,  1., -0.,  1.,  0.,  1.,  1.,
+        1.,  0.,  1., -0.,  0., -0.,  1.]))"
+knapsack_n20_seed16,GomoryCuttingPlane,0.05593604198656976,"(77.0, array([1., 1., 0., 1., 1., 0., 0., 1., 0., 1., 0., 1., 1., 1., 0., 1., 0.,
+       0., 0., 1.]))"
+knapsack_n20_seed17,BranchAndBound,0.01210904197068885,"(79.0, array([0., 1., 1., 1., 0., 1., 0., 1., 0., 0., 0., 1., 1., 1., 1., 0., 1.,
+       0., 1., 1.]))"
+knapsack_n20_seed17,GomoryCuttingPlane,0.05727841699263081,"(79.0, array([0., 1., 1., 1., 0., 0., 1., 1., 0., 0., 0., 1., 1., 1., 1., 0., 1.,
+       0., 1., 1.]))"
+knapsack_n20_seed18,BranchAndBound,0.03393899998627603,"(67.0, array([ 1.,  0.,  1., -0.,  0.,  1.,  1.,  0.,  1.,  0.,  1.,  0.,  0.,
+        1.,  1.,  0.,  1.,  1.,  1.,  0.]))"
+knapsack_n20_seed18,GomoryCuttingPlane,0.0471920000272803,fail: ValueError: Initial tableau is not primal feasible. Use TwoPhaseSimplex for problems with negative right-hand side values.
+knapsack_n20_seed19,BranchAndBound,0.034016583987977356,"(69.0, array([ 1.,  1.,  0., -0.,  1.,  1.,  1.,  1.,  0.,  0.,  0.,  0.,  1.,
+        1.,  1.,  0.,  0.,  0.,  0.,  1.]))"
+knapsack_n20_seed19,GomoryCuttingPlane,0.059258416993543506,"(72.0, array([1., 1., 1., 1., 1., 1., 1., 1., 0., 0., 0., 0., 1., 1., 1., 0., 0.,
+       0., 0., 0.]))"
+knapsack_n2_seed00,BranchAndBound,0.0015230000135488808,"(0.0, array([-0., -0.]))"
+knapsack_n2_seed00,GomoryCuttingPlane,0.00017629098147153854,"(0.0, array([0., 0.]))"
+knapsack_n2_seed01,BranchAndBound,0.00035675003891810775,"(10.0, array([1., 1.]))"
+knapsack_n2_seed01,GomoryCuttingPlane,9.1583002358675e-05,"(10.0, array([1., 1.]))"
+knapsack_n2_seed02,BranchAndBound,0.0008251250255852938,"(6.0, array([ 1., -0.]))"
+knapsack_n2_seed02,GomoryCuttingPlane,0.00018637499306350946,"(6.0, array([1., 0.]))"
+knapsack_n2_seed03,BranchAndBound,0.0013488749973475933,"(0.0, array([-0., -0.]))"
+knapsack_n2_seed03,GomoryCuttingPlane,0.00016675004735589027,"(0.0, array([0., 0.]))"
+knapsack_n2_seed04,BranchAndBound,0.0003016670234501362,"(8.0, array([0., 1.]))"
+knapsack_n2_seed04,GomoryCuttingPlane,6.729102460667491e-05,"(8.0, array([0., 1.]))"
+knapsack_n2_seed05,BranchAndBound,0.0003023750032298267,"(5.0, array([1., 1.]))"
+knapsack_n2_seed05,GomoryCuttingPlane,0.00019449996761977673,"(5.0, array([1., 1.]))"
+knapsack_n2_seed06,BranchAndBound,0.0015344999847002327,"(0.0, array([-0., -0.]))"
+knapsack_n2_seed06,GomoryCuttingPlane,0.00016866595251485705,fail: ValueError: Initial tableau is not primal feasible. Use TwoPhaseSimplex for problems with negative right-hand side values.
+knapsack_n2_seed07,BranchAndBound,0.0013310419744811952,"(0.0, array([-0., -0.]))"
+knapsack_n2_seed07,GomoryCuttingPlane,0.00016695901285856962,fail: ValueError: Initial tableau is not primal feasible. Use TwoPhaseSimplex for problems with negative right-hand side values.
+knapsack_n2_seed08,BranchAndBound,0.001493083022069186,"(0.0, array([-0., -0.]))"
+knapsack_n2_seed08,GomoryCuttingPlane,0.00021287502022460103,"(0.0, array([0., 0.]))"
+knapsack_n2_seed09,BranchAndBound,0.0014258340233936906,"(5.0, array([ 1., -0.]))"
+knapsack_n2_seed09,GomoryCuttingPlane,0.00025220803217962384,"(5.0, array([1., 0.]))"
+knapsack_n2_seed10,BranchAndBound,0.0014912079786881804,"(3.0, array([ 1., -0.]))"
+knapsack_n2_seed10,GomoryCuttingPlane,0.0001941670197993517,"(3.0, array([1., 0.]))"
+knapsack_n2_seed11,BranchAndBound,0.0015897079720161855,"(9.0, array([-0.,  1.]))"
+knapsack_n2_seed11,GomoryCuttingPlane,0.00020012498134747148,"(9.0, array([0., 1.]))"
+knapsack_n2_seed12,BranchAndBound,0.0008286249940283597,"(9.0, array([-0.,  1.]))"
+knapsack_n2_seed12,GomoryCuttingPlane,0.00020545802544802427,"(9.0, array([0., 1.]))"
+knapsack_n2_seed13,BranchAndBound,0.00030520797008648515,"(15.0, array([1., 1.]))"
+knapsack_n2_seed13,GomoryCuttingPlane,8.504203287884593e-05,"(15.0, array([1., 1.]))"
+knapsack_n2_seed14,BranchAndBound,0.001258125004824251,"(0.0, array([-0., -0.]))"
+knapsack_n2_seed14,GomoryCuttingPlane,0.00016733299707993865,"(0.0, array([0., 0.]))"
+knapsack_n2_seed15,BranchAndBound,0.0003494169795885682,"(13.0, array([1., 1.]))"
+knapsack_n2_seed15,GomoryCuttingPlane,0.00034725002478808165,"(13.0, array([1., 1.]))"
+knapsack_n2_seed16,BranchAndBound,0.0015582089545205235,"(6.0, array([-0.,  1.]))"
+knapsack_n2_seed16,GomoryCuttingPlane,0.000321416009683162,"(6.0, array([0., 1.]))"
+knapsack_n2_seed17,BranchAndBound,0.0015423749573528767,"(5.0, array([-0.,  1.]))"
+knapsack_n2_seed17,GomoryCuttingPlane,0.0005775000317953527,"(5.0, array([0., 1.]))"
+knapsack_n2_seed18,BranchAndBound,0.0018622910138219595,"(8.0, array([-0.,  1.]))"
+knapsack_n2_seed18,GomoryCuttingPlane,0.0002504159929230809,"(8.0, array([0., 1.]))"
+knapsack_n2_seed19,BranchAndBound,0.0009149169782176614,"(5.0, array([ 1., -0.]))"
+knapsack_n2_seed19,GomoryCuttingPlane,0.00030150002567097545,"(5.0, array([1., 0.]))"
+knapsack_n3_seed00,BranchAndBound,0.001059084024745971,"(17.0, array([ 1.,  1., -0.]))"
+knapsack_n3_seed00,GomoryCuttingPlane,0.00024045800091698766,"(17.0, array([1., 1., 0.]))"
+knapsack_n3_seed01,BranchAndBound,0.0010776249691843987,"(9.0, array([ 1.,  1., -0.]))"
+knapsack_n3_seed01,GomoryCuttingPlane,0.0002400000230409205,"(9.0, array([1., 1., 0.]))"
+knapsack_n3_seed02,BranchAndBound,0.0003041670424863696,"(15.0, array([1., 1., 1.]))"
+knapsack_n3_seed02,GomoryCuttingPlane,0.00010812497930601239,"(15.0, array([1., 1., 1.]))"
+knapsack_n3_seed03,BranchAndBound,0.0003386249882169068,"(11.0, array([0., 1., 1.]))"
+knapsack_n3_seed03,GomoryCuttingPlane,8.962501306086779e-05,"(11.0, array([0., 1., 1.]))"
+knapsack_n3_seed04,BranchAndBound,0.00034658395452424884,"(10.0, array([ 1.,  1., -0.]))"
+knapsack_n3_seed04,GomoryCuttingPlane,0.0001829999964684248,"(10.0, array([1., 1., 0.]))"
+knapsack_n3_seed05,BranchAndBound,0.002636792021803558,"(9.0, array([-0., -0.,  1.]))"
+knapsack_n3_seed05,GomoryCuttingPlane,0.0002454170025885105,"(9.0, array([0., 0., 1.]))"
+knapsack_n3_seed06,BranchAndBound,0.0003552499692887068,"(9.0, array([ 1., -0.,  1.]))"
+knapsack_n3_seed06,GomoryCuttingPlane,0.00010258296970278025,"(9.0, array([1., 0., 1.]))"
+knapsack_n3_seed07,BranchAndBound,0.001915041997563094,"(11.0, array([ 1., -0.,  1.]))"
+knapsack_n3_seed07,GomoryCuttingPlane,0.00029912503669038415,"(11.0, array([1., 0., 1.]))"
+knapsack_n3_seed08,BranchAndBound,0.0016165829729288816,"(9.0, array([ 1., -0.,  1.]))"
+knapsack_n3_seed08,GomoryCuttingPlane,0.00023495894856750965,"(9.0, array([1., 0., 1.]))"
+knapsack_n3_seed09,BranchAndBound,0.0006378339603543282,"(6.0, array([0., 0., 1.]))"
+knapsack_n3_seed09,GomoryCuttingPlane,0.00012433301890268922,"(6.0, array([0., 0., 1.]))"
+knapsack_n3_seed10,BranchAndBound,0.0038408749969676137,"(4.0, array([-0., -0.,  1.]))"
+knapsack_n3_seed10,GomoryCuttingPlane,0.00042212498374283314,"(4.0, array([0., 0., 1.]))"
+knapsack_n3_seed11,BranchAndBound,0.0014249999658204615,"(5.0, array([-0.,  1., -0.]))"
+knapsack_n3_seed11,GomoryCuttingPlane,0.00030999997397884727,"(5.0, array([0., 1., 0.]))"
+knapsack_n3_seed12,BranchAndBound,0.0037894159904681146,"(9.0, array([-0., -0.,  1.]))"
+knapsack_n3_seed12,GomoryCuttingPlane,0.0006695830379612744,"(9.0, array([0., 0., 1.]))"
+knapsack_n3_seed13,BranchAndBound,0.001282875018659979,"(3.0, array([ 1., -0., -0.]))"
+knapsack_n3_seed13,GomoryCuttingPlane,0.00023791700368747115,"(3.0, array([1., 0., 0.]))"
+knapsack_n3_seed14,BranchAndBound,0.003365083015523851,"(7.0, array([-0., -0.,  1.]))"
+knapsack_n3_seed14,GomoryCuttingPlane,0.0005622499738819897,"(7.0, array([0., 0., 1.]))"
+knapsack_n3_seed15,BranchAndBound,0.003381041984539479,"(6.0, array([ 1., -0., -0.]))"
+knapsack_n3_seed15,GomoryCuttingPlane,0.0008365419926121831,"(6.0, array([1., 0., 0.]))"
+knapsack_n3_seed16,BranchAndBound,0.0014491670299321413,"(3.0, array([-0.,  1., -0.]))"
+knapsack_n3_seed16,GomoryCuttingPlane,0.00032945803832262754,"(3.0, array([0., 1., 0.]))"
+knapsack_n3_seed17,BranchAndBound,0.002079583005979657,"(0.0, array([-0., -0., -0.]))"
+knapsack_n3_seed17,GomoryCuttingPlane,0.00041566701838746667,"(0.0, array([0., 0., 0.]))"
+knapsack_n3_seed18,BranchAndBound,0.003040916984900832,"(4.0, array([-0.,  1., -0.]))"
+knapsack_n3_seed18,GomoryCuttingPlane,0.0004932910087518394,"(4.0, array([0., 1., 0.]))"
+knapsack_n3_seed19,BranchAndBound,0.002154917048756033,"(8.0, array([-0.,  1., -0.]))"
+knapsack_n3_seed19,GomoryCuttingPlane,0.0007275840034708381,"(8.0, array([0., 1., 0.]))"
+knapsack_n4_seed00,BranchAndBound,0.00543600000673905,"(13.0, array([1., 0., 0., 1.]))"
+knapsack_n4_seed00,GomoryCuttingPlane,0.00038991699693724513,"(13.0, array([1., 1., 0., 0.]))"
+knapsack_n4_seed01,BranchAndBound,0.03407916700234637,"(8.0, array([ 1., -0., -0.,  1.]))"
+knapsack_n4_seed01,GomoryCuttingPlane,0.0004104999825358391,"(8.0, array([1., 0., 0., 1.]))"
+knapsack_n4_seed02,BranchAndBound,0.0013066670508123934,"(11.0, array([1., 0., 0., 1.]))"
+knapsack_n4_seed02,GomoryCuttingPlane,0.0003451250377111137,"(11.0, array([1., 0., 0., 1.]))"
+knapsack_n4_seed03,BranchAndBound,0.009750000026542693,"(11.0, array([-0.,  1., -0.,  1.]))"
+knapsack_n4_seed03,GomoryCuttingPlane,0.0017879169899970293,"(11.0, array([1., 0., 0., 1.]))"
+knapsack_n4_seed04,BranchAndBound,0.004527624987531453,"(8.0, array([ 1., -0., -0., -0.]))"
+knapsack_n4_seed04,GomoryCuttingPlane,0.012389041017740965,"(8.0, array([1., 0., 0., 0.]))"
+knapsack_n4_seed05,BranchAndBound,0.0004516249755397439,"(16.0, array([ 1., -0.,  1.,  1.]))"
+knapsack_n4_seed05,GomoryCuttingPlane,0.00013004103675484657,"(16.0, array([1., 0., 1., 1.]))"
+knapsack_n4_seed06,BranchAndBound,0.00034591701114550233,"(7.0, array([0., 1., 0., 0.]))"
+knapsack_n4_seed06,GomoryCuttingPlane,9.824999142438173e-05,"(7.0, array([0., 1., 0., 0.]))"
+knapsack_n4_seed07,BranchAndBound,0.00037329201586544514,"(17.0, array([-0.,  1.,  1.,  1.]))"
+knapsack_n4_seed07,GomoryCuttingPlane,0.00036266702227294445,"(17.0, array([0., 1., 1., 1.]))"
+knapsack_n4_seed08,BranchAndBound,0.002895624958910048,"(12.0, array([ 1.,  1., -0.,  1.]))"
+knapsack_n4_seed08,GomoryCuttingPlane,0.0009215419995598495,"(12.0, array([1., 1., 1., 0.]))"
+knapsack_n4_seed09,BranchAndBound,0.0009861250291578472,"(6.0, array([-0., -0.,  1.,  1.]))"
+knapsack_n4_seed09,GomoryCuttingPlane,0.00025037501472979784,"(6.0, array([0., 0., 1., 1.]))"
+knapsack_n4_seed10,BranchAndBound,0.0011787080438807607,"(11.0, array([ 1., -0.,  1.,  0.]))"
+knapsack_n4_seed10,GomoryCuttingPlane,0.00046616699546575546,"(11.0, array([1., 0., 1., 0.]))"
+knapsack_n4_seed11,BranchAndBound,0.002060124999843538,"(3.0, array([-0., -0., -0.,  1.]))"
+knapsack_n4_seed11,GomoryCuttingPlane,0.0006084999768063426,"(3.0, array([0., 0., 0., 1.]))"
+knapsack_n4_seed12,BranchAndBound,0.005321541975717992,"(8.0, array([-0.,  1., -0., -0.]))"
+knapsack_n4_seed12,GomoryCuttingPlane,0.00033712497679516673,"(8.0, array([0., 1., 0., 0.]))"
+knapsack_n4_seed13,BranchAndBound,0.0029971670010127127,"(12.0, array([ 1.,  1., -0.,  1.]))"
+knapsack_n4_seed13,GomoryCuttingPlane,0.0004190829931758344,"(12.0, array([1., 1., 0., 1.]))"
+knapsack_n4_seed14,BranchAndBound,0.0034427500213496387,"(9.0, array([-0.,  1., -0.,  1.]))"
+knapsack_n4_seed14,GomoryCuttingPlane,0.0006363329594023526,"(9.0, array([0., 1., 0., 1.]))"
+knapsack_n4_seed15,BranchAndBound,0.0009703749674372375,"(14.0, array([ 1.,  1.,  1., -0.]))"
+knapsack_n4_seed15,GomoryCuttingPlane,0.0002872080076485872,"(14.0, array([1., 1., 1., 0.]))"
+knapsack_n4_seed16,BranchAndBound,0.0037363750161603093,"(13.0, array([ 1., -0.,  1.,  0.]))"
+knapsack_n4_seed16,GomoryCuttingPlane,0.0013857500161975622,"(13.0, array([0., 1., 1., 0.]))"
+knapsack_n4_seed17,BranchAndBound,0.0024003329453989863,"(17.0, array([ 1., -0.,  1.,  1.]))"
+knapsack_n4_seed17,GomoryCuttingPlane,0.00040429196087643504,"(17.0, array([1., 0., 1., 1.]))"
+knapsack_n4_seed18,BranchAndBound,0.005800999992061406,"(12.0, array([ 1., -0.,  1., -0.]))"
+knapsack_n4_seed18,GomoryCuttingPlane,0.0007575000054202974,"(12.0, array([1., 0., 1., 0.]))"
+knapsack_n4_seed19,BranchAndBound,0.0017739589675329626,"(14.0, array([-0.,  1., -0.,  1.]))"
+knapsack_n4_seed19,GomoryCuttingPlane,0.0003861250006593764,"(14.0, array([0., 1., 0., 1.]))"
+knapsack_n5_seed00,BranchAndBound,0.003778000012971461,"(17.0, array([ 1., -0., -0.,  1.,  1.]))"
+knapsack_n5_seed00,GomoryCuttingPlane,0.0006877919659018517,"(17.0, array([1., 0., 0., 1., 1.]))"
+knapsack_n5_seed01,BranchAndBound,0.00038004200905561447,"(5.0, array([0., 0., 0., 0., 1.]))"
+knapsack_n5_seed01,GomoryCuttingPlane,0.00015795795479789376,"(5.0, array([0., 0., 0., 0., 1.]))"
+knapsack_n5_seed02,BranchAndBound,0.0003753339988179505,"(13.0, array([ 1.,  1.,  0., -0.,  1.]))"
+knapsack_n5_seed02,GomoryCuttingPlane,0.0001741250162012875,"(13.0, array([1., 1., 0., 0., 1.]))"
+knapsack_n5_seed03,BranchAndBound,0.0032235420076176524,"(0.0, array([-0., -0., -0., -0., -0.]))"
+knapsack_n5_seed03,GomoryCuttingPlane,0.00021670799469575286,"(0.0, array([0., 0., 0., 0., 0.]))"
+knapsack_n5_seed04,BranchAndBound,0.00031404203036800027,"(11.0, array([1., 0., 0., 0., 1.]))"
+knapsack_n5_seed04,GomoryCuttingPlane,0.00013000000035390258,"(11.0, array([1., 0., 0., 0., 1.]))"
+knapsack_n5_seed05,BranchAndBound,0.0003053750260733068,"(13.0, array([0., 0., 1., 0., 1.]))"
+knapsack_n5_seed05,GomoryCuttingPlane,0.00015945901395753026,"(13.0, array([1., 0., 0., 0., 1.]))"
+knapsack_n5_seed06,BranchAndBound,0.0045226249494589865,"(15.0, array([ 1., -0.,  1., -0., -0.]))"
+knapsack_n5_seed06,GomoryCuttingPlane,0.004456291964743286,"(14.0, array([0., 0., 1., 1., 0.]))"
+knapsack_n5_seed07,BranchAndBound,0.006065041990950704,"(21.0, array([ 1.,  1., -0.,  1., -0.]))"
+knapsack_n5_seed07,GomoryCuttingPlane,0.006064958986826241,"(21.0, array([1., 1., 0., 1., 0.]))"
+knapsack_n5_seed08,BranchAndBound,0.0005278750322759151,"(9.0, array([ 1.,  0.,  0., -0.,  0.]))"
+knapsack_n5_seed08,GomoryCuttingPlane,0.00013008300447836518,"(9.0, array([1., 0., 0., 0., 0.]))"
+knapsack_n5_seed09,BranchAndBound,0.0004980419762432575,"(21.0, array([-0.,  1.,  1.,  1.,  1.]))"
+knapsack_n5_seed09,GomoryCuttingPlane,0.00019037502352148294,"(21.0, array([0., 1., 1., 1., 1.]))"
+knapsack_n5_seed10,BranchAndBound,0.0011159160058014095,"(16.0, array([ 1.,  0., -0.,  0.,  1.]))"
+knapsack_n5_seed10,GomoryCuttingPlane,0.00025808397913351655,"(16.0, array([1., 0., 0., 0., 1.]))"
+knapsack_n5_seed11,BranchAndBound,0.005313207977451384,"(19.0, array([ 1., -0., -0.,  1.,  1.]))"
+knapsack_n5_seed11,GomoryCuttingPlane,0.07222779100993648,"(21.0, array([1., 0., 1., 1., 0.]))"
+knapsack_n5_seed12,BranchAndBound,0.0034640830126591027,"(0.0, array([-0., -0., -0., -0., -0.]))"
+knapsack_n5_seed12,GomoryCuttingPlane,0.00024149997625499964,"(0.0, array([0., 0., 0., 0., 0.]))"
+knapsack_n5_seed13,BranchAndBound,0.001138417050242424,"(13.0, array([0., 0., 1., 1., 0.]))"
+knapsack_n5_seed13,GomoryCuttingPlane,0.0002952920040115714,"(13.0, array([0., 0., 1., 1., 0.]))"
+knapsack_n5_seed14,BranchAndBound,0.0003457499551586807,"(14.0, array([ 1.,  0.,  1.,  0., -0.]))"
+knapsack_n5_seed14,GomoryCuttingPlane,0.00018895900575444102,"(14.0, array([1., 0., 1., 0., 0.]))"
+knapsack_n5_seed15,BranchAndBound,0.0032447910052724183,"(11.0, array([ 1., -0., -0.,  1., -0.]))"
+knapsack_n5_seed15,GomoryCuttingPlane,0.0006885830080136657,"(11.0, array([1., 0., 0., 1., 0.]))"
+knapsack_n5_seed16,BranchAndBound,0.0003643750096671283,"(7.0, array([ 1., -0.,  0.,  0.,  0.]))"
+knapsack_n5_seed16,GomoryCuttingPlane,0.00015458301641047,"(7.0, array([1., 0., 0., 0., 0.]))"
+knapsack_n5_seed17,BranchAndBound,0.0030479999841190875,"(4.0, array([-0., -0., -0., -0.,  1.]))"
+knapsack_n5_seed17,GomoryCuttingPlane,0.00022833299590274692,"(4.0, array([0., 0., 0., 0., 1.]))"
+knapsack_n5_seed18,BranchAndBound,0.00413337501231581,"(24.0, array([ 1., -0.,  1.,  1., -0.]))"
+knapsack_n5_seed18,GomoryCuttingPlane,0.00153945799684152,"(24.0, array([0., 1., 1., 1., 1.]))"
+knapsack_n5_seed19,BranchAndBound,0.0003285420243628323,"(8.0, array([0., 0., 0., 1., 0.]))"
+knapsack_n5_seed19,GomoryCuttingPlane,0.00010291603393852711,"(8.0, array([0., 0., 0., 1., 0.]))"
+knapsack_n6_seed00,BranchAndBound,0.00044716696720570326,"(23.0, array([0., 0., 1., 1., 1., 1.]))"
+knapsack_n6_seed00,GomoryCuttingPlane,0.00019591604359447956,"(23.0, array([0., 1., 1., 1., 0., 1.]))"
+knapsack_n6_seed01,BranchAndBound,0.003860917000565678,"(18.0, array([-0.,  1.,  0.,  1.,  1.,  1.]))"
+knapsack_n6_seed01,GomoryCuttingPlane,0.00031533295987173915,"(18.0, array([0., 1., 1., 0., 1., 1.]))"
+knapsack_n6_seed02,BranchAndBound,0.0042004999704658985,"(0.0, array([-0., -0., -0., -0., -0., -0.]))"
+knapsack_n6_seed02,GomoryCuttingPlane,0.00035583297722041607,"(0.0, array([0., 0., 0., 0., 0., 0.]))"
+knapsack_n6_seed03,BranchAndBound,0.004570999997667968,"(18.0, array([ 0.,  1.,  1., -0.,  0.,  1.]))"
+knapsack_n6_seed03,GomoryCuttingPlane,0.002131582994479686,"(17.0, array([0., 1., 0., 1., 0., 1.]))"
+knapsack_n6_seed04,BranchAndBound,0.008482833974994719,"(27.0, array([-0.,  1., -0.,  1.,  1.,  1.]))"
+knapsack_n6_seed04,GomoryCuttingPlane,0.0007020839839242399,"(27.0, array([0., 1., 0., 1., 1., 1.]))"
+knapsack_n6_seed05,BranchAndBound,0.009255666984245181,"(24.0, array([-0.,  1.,  1.,  1.,  1., -0.]))"
+knapsack_n6_seed05,GomoryCuttingPlane,0.0014158330159261823,"(24.0, array([0., 1., 1., 1., 1., 0.]))"
+knapsack_n6_seed06,BranchAndBound,0.008421583042945713,"(19.0, array([-0.,  1.,  1., -0.,  1., -0.]))"
+knapsack_n6_seed06,GomoryCuttingPlane,0.0005499999970197678,"(19.0, array([0., 1., 1., 0., 1., 0.]))"
+knapsack_n6_seed07,BranchAndBound,0.003219667007215321,"(16.0, array([ 1.,  1.,  0., -0.,  0.,  1.]))"
+knapsack_n6_seed07,GomoryCuttingPlane,0.0009593329741619527,"(16.0, array([1., 1., 0., 0., 0., 1.]))"
+knapsack_n6_seed08,BranchAndBound,0.0027300419751554728,"(28.0, array([-0.,  1.,  1.,  1., -0.,  1.]))"
+knapsack_n6_seed08,GomoryCuttingPlane,0.0005649169906973839,"(28.0, array([0., 1., 1., 1., 0., 1.]))"
+knapsack_n6_seed09,BranchAndBound,0.002436957962345332,"(28.0, array([ 1., -0.,  1.,  1.,  1.,  1.]))"
+knapsack_n6_seed09,GomoryCuttingPlane,0.00035716703860089183,"(28.0, array([1., 0., 1., 1., 1., 1.]))"
+knapsack_n6_seed10,BranchAndBound,0.00041458301711827517,"(29.0, array([ 1., -0.,  1.,  0.,  1.,  1.]))"
+knapsack_n6_seed10,GomoryCuttingPlane,0.00031879200832918286,"(29.0, array([1., 0., 1., 0., 1., 1.]))"
+knapsack_n6_seed11,BranchAndBound,0.001158582977950573,"(16.0, array([ 1., -0., -0.,  1.,  1.,  0.]))"
+knapsack_n6_seed11,GomoryCuttingPlane,0.00025345798349007964,"(16.0, array([1., 0., 0., 1., 1., 0.]))"
+knapsack_n6_seed12,BranchAndBound,0.008890583005268127,"(15.0, array([-0., -0.,  1.,  1., -0.,  1.]))"
+knapsack_n6_seed12,GomoryCuttingPlane,0.0009348340099677444,"(15.0, array([0., 0., 1., 1., 0., 1.]))"
+knapsack_n6_seed13,BranchAndBound,0.00334904104238376,"(28.0, array([ 1.,  1.,  1., -0.,  1.,  1.]))"
+knapsack_n6_seed13,GomoryCuttingPlane,0.0003357080277055502,"(28.0, array([1., 1., 1., 0., 1., 1.]))"
+knapsack_n6_seed14,BranchAndBound,0.0028685840079560876,"(8.0, array([-0.,  1.,  1.,  1., -0., -0.]))"
+knapsack_n6_seed14,GomoryCuttingPlane,0.0009741249959915876,"(8.0, array([0., 1., 1., 1., 0., 0.]))"
+knapsack_n6_seed15,BranchAndBound,0.0067338329972699285,"(16.0, array([ 1., -0.,  1., -0.,  1.,  1.]))"
+knapsack_n6_seed15,GomoryCuttingPlane,0.00033195799915120006,"(16.0, array([1., 0., 1., 0., 1., 1.]))"
+knapsack_n6_seed16,BranchAndBound,0.024715667008422315,"(23.0, array([-0.,  1.,  1.,  1., -0., -0.]))"
+knapsack_n6_seed16,GomoryCuttingPlane,0.0331215420155786,fail: ValueError: Initial tableau is not primal feasible. Use TwoPhaseSimplex for problems with negative right-hand side values.
+knapsack_n6_seed17,BranchAndBound,0.0035547500010579824,"(19.0, array([ 1., -0.,  1.,  1., -0.,  1.]))"
+knapsack_n6_seed17,GomoryCuttingPlane,0.0008837499772198498,"(19.0, array([1., 0., 1., 1., 0., 1.]))"
+knapsack_n6_seed18,BranchAndBound,0.002548165968619287,"(17.0, array([0., 1., 1., 0., 1., 0.]))"
+knapsack_n6_seed18,GomoryCuttingPlane,0.0007803330081515014,"(17.0, array([0., 1., 1., 0., 1., 0.]))"
+knapsack_n6_seed19,BranchAndBound,0.00039966695476323366,"(7.0, array([0., 0., 0., 1., 0., 0.]))"
+knapsack_n6_seed19,GomoryCuttingPlane,0.00011233298573642969,"(7.0, array([0., 0., 0., 1., 0., 0.]))"
+knapsack_n7_seed00,BranchAndBound,0.003481250023469329,"(23.0, array([ 0.,  1.,  0.,  1.,  0., -0.,  1.]))"
+knapsack_n7_seed00,GomoryCuttingPlane,0.001508000015746802,"(23.0, array([0., 1., 0., 1., 0., 0., 1.]))"
+knapsack_n7_seed01,BranchAndBound,0.002658375015016645,"(25.0, array([1., 0., 0., 1., 0., 0., 1.]))"
+knapsack_n7_seed01,GomoryCuttingPlane,0.0010911250137723982,"(25.0, array([1., 0., 0., 1., 0., 0., 1.]))"
+knapsack_n7_seed02,BranchAndBound,0.0035461249644868076,"(8.0, array([ 0.,  0.,  0., -0.,  0.,  1.,  0.]))"
+knapsack_n7_seed02,GomoryCuttingPlane,0.0028675830108113587,"(8.0, array([0., 0., 0., 0., 0., 1., 0.]))"
+knapsack_n7_seed03,BranchAndBound,0.008751624962314963,"(17.0, array([ 1.,  1., -0.,  1., -0.,  0., -0.]))"
+knapsack_n7_seed03,GomoryCuttingPlane,0.04857320798328146,"(11.0, array([0., 0., 1., 1., 0., 0., 0.]))"
+knapsack_n7_seed04,BranchAndBound,0.005463250039611012,"(15.0, array([-0.,  1., -0., -0.,  1., -0.,  1.]))"
+knapsack_n7_seed04,GomoryCuttingPlane,0.0033433340140618384,"(15.0, array([0., 1., 0., 0., 1., 0., 1.]))"
+knapsack_n7_seed05,BranchAndBound,0.00444137497106567,"(31.0, array([ 1., -0., -0.,  1.,  1.,  1.,  1.]))"
+knapsack_n7_seed05,GomoryCuttingPlane,0.0005676249857060611,"(31.0, array([1., 0., 0., 1., 1., 1., 1.]))"
+knapsack_n7_seed06,BranchAndBound,0.007673792017158121,"(10.0, array([ 0.,  1., -0., -0., -0., -0.,  1.]))"
+knapsack_n7_seed06,GomoryCuttingPlane,0.0012510420056059957,"(10.0, array([0., 1., 0., 0., 0., 0., 1.]))"
+knapsack_n7_seed07,BranchAndBound,0.001294083020184189,"(22.0, array([ 1.,  1.,  1.,  1.,  0., -0.,  0.]))"
+knapsack_n7_seed07,GomoryCuttingPlane,0.0004354170523583889,"(22.0, array([1., 1., 1., 1., 0., 0., 0.]))"
+knapsack_n7_seed08,BranchAndBound,0.001188291993457824,"(30.0, array([ 1.,  1.,  1.,  1., -0.,  1.,  1.]))"
+knapsack_n7_seed08,GomoryCuttingPlane,0.00040912500116974115,"(30.0, array([1., 1., 1., 1., 0., 1., 1.]))"
+knapsack_n7_seed09,BranchAndBound,0.011241875006817281,"(9.0, array([-0., -0.,  1., -0., -0., -0., -0.]))"
+knapsack_n7_seed09,GomoryCuttingPlane,0.001324000011663884,"(9.0, array([0., 0., 1., 0., 0., 0., 0.]))"
+knapsack_n7_seed10,BranchAndBound,0.006678624951746315,"(12.0, array([-0.,  1.,  1.,  1., -0., -0., -0.]))"
+knapsack_n7_seed10,GomoryCuttingPlane,0.0019191669998690486,"(12.0, array([0., 1., 1., 1., 0., 0., 0.]))"
+knapsack_n7_seed11,BranchAndBound,0.014078208012506366,"(14.0, array([ 1., -0., -0.,  1.,  1.,  1., -0.]))"
+knapsack_n7_seed11,GomoryCuttingPlane,0.004291250021196902,"(14.0, array([1., 0., 1., 1., 0., 1., 0.]))"
+knapsack_n7_seed12,BranchAndBound,0.0011768749682232738,"(9.0, array([-0.,  0.,  1.,  0.,  0.,  0.,  0.]))"
+knapsack_n7_seed12,GomoryCuttingPlane,0.0002626659697853029,"(9.0, array([1., 0., 0., 1., 0., 0., 0.]))"
+knapsack_n7_seed13,BranchAndBound,0.007994707964826375,"(19.0, array([-0., -0., -0., -0.,  1.,  1.,  1.]))"
+knapsack_n7_seed13,GomoryCuttingPlane,0.0012545419740490615,"(19.0, array([0., 0., 0., 0., 1., 1., 1.]))"
+knapsack_n7_seed14,BranchAndBound,0.007071374973747879,"(18.0, array([ 1.,  1.,  1.,  0., -0.,  0.,  0.]))"
+knapsack_n7_seed14,GomoryCuttingPlane,0.055412207962945104,"(18.0, array([1., 0., 1., 1., 1., 0., 0.]))"
+knapsack_n7_seed15,BranchAndBound,0.0024677919573150575,"(45.0, array([ 1.,  1.,  1.,  1., -0.,  1.,  1.]))"
+knapsack_n7_seed15,GomoryCuttingPlane,0.0004065000102855265,"(45.0, array([1., 1., 1., 1., 0., 1., 1.]))"
+knapsack_n7_seed16,BranchAndBound,0.0043778750114142895,"(27.0, array([-0.,  1.,  0.,  1.,  1.,  1., -0.]))"
+knapsack_n7_seed16,GomoryCuttingPlane,0.0005371670122258365,"(27.0, array([0., 1., 0., 1., 1., 1., 0.]))"
+knapsack_n7_seed17,BranchAndBound,0.010677167039830238,"(24.0, array([ 0., -0.,  1.,  1., -0.,  1.,  1.]))"
+knapsack_n7_seed17,GomoryCuttingPlane,0.0007455419981852174,"(24.0, array([0., 0., 1., 1., 0., 1., 1.]))"
+knapsack_n7_seed18,BranchAndBound,0.011934124981053174,"(21.0, array([-0.,  1., -0., -0.,  1., -0.,  1.]))"
+knapsack_n7_seed18,GomoryCuttingPlane,0.003808541048783809,"(21.0, array([0., 1., 0., 0., 1., 0., 1.]))"
+knapsack_n7_seed19,BranchAndBound,0.009747915959451348,"(27.0, array([-0.,  1., -0., -0.,  1.,  1.,  1.]))"
+knapsack_n7_seed19,GomoryCuttingPlane,0.0006585829542018473,"(27.0, array([0., 1., 0., 0., 1., 1., 1.]))"
+knapsack_n8_seed00,BranchAndBound,0.0017424170509912074,"(15.0, array([0., 0., 0., 0., 1., 1., 0., 0.]))"
+knapsack_n8_seed00,GomoryCuttingPlane,0.0005807080306112766,"(15.0, array([0., 0., 0., 0., 1., 1., 0., 0.]))"
+knapsack_n8_seed01,BranchAndBound,0.007399249996524304,"(30.0, array([-0.,  1.,  1.,  1.,  1., -0.,  1.,  1.]))"
+knapsack_n8_seed01,GomoryCuttingPlane,0.033362917019985616,"(30.0, array([0., 1., 1., 1., 1., 0., 1., 1.]))"
+knapsack_n8_seed02,BranchAndBound,0.0055045829503796995,"(28.0, array([ 1.,  1.,  1.,  1., -0.,  1.,  1.,  1.]))"
+knapsack_n8_seed02,GomoryCuttingPlane,0.0022065829834900796,"(28.0, array([1., 0., 1., 1., 1., 1., 1., 0.]))"
+knapsack_n8_seed03,BranchAndBound,0.0028017080039717257,"(35.0, array([ 1., -0.,  1.,  1.,  1.,  1., -0., -0.]))"
+knapsack_n8_seed03,GomoryCuttingPlane,0.0007017079624347389,"(35.0, array([1., 0., 1., 1., 1., 1., 0., 0.]))"
+knapsack_n8_seed04,BranchAndBound,0.021899832994677126,"(27.0, array([ 1.,  1., -0., -0., -0.,  1.,  1.,  1.]))"
+knapsack_n8_seed04,GomoryCuttingPlane,0.0006571249687112868,"(27.0, array([1., 1., 0., 0., 0., 1., 1., 1.]))"
+knapsack_n8_seed05,BranchAndBound,0.010417332989163697,"(19.0, array([ 1., -0.,  1.,  1., -0.,  1.,  0., -0.]))"
+knapsack_n8_seed05,GomoryCuttingPlane,0.006383083004038781,"(19.0, array([1., 0., 1., 1., 0., 0., 0., 1.]))"
+knapsack_n8_seed06,BranchAndBound,0.008263374969828874,"(26.0, array([ 1., -0., -0.,  1.,  1.,  1.,  1., -0.]))"
+knapsack_n8_seed06,GomoryCuttingPlane,0.03292779199546203,"(26.0, array([1., 0., 0., 1., 1., 1., 0., 1.]))"
+knapsack_n8_seed07,BranchAndBound,0.040950375027023256,"(27.0, array([ 1., -0.,  1., -0., -0.,  1.,  1., -0.]))"
+knapsack_n8_seed07,GomoryCuttingPlane,0.0012379999971017241,"(27.0, array([1., 0., 1., 0., 0., 1., 1., 0.]))"
+knapsack_n8_seed08,BranchAndBound,0.02384883299237117,"(31.0, array([ 1., -0.,  1.,  1.,  1., -0., -0.,  1.]))"
+knapsack_n8_seed08,GomoryCuttingPlane,0.03969933302141726,"(31.0, array([0., 1., 0., 1., 1., 1., 0., 1.]))"
+knapsack_n8_seed09,BranchAndBound,0.0034687499864958227,"(26.0, array([1., 0., 0., 0., 1., 1., 0., 1.]))"
+knapsack_n8_seed09,GomoryCuttingPlane,0.0012003750307485461,"(26.0, array([1., 0., 0., 0., 1., 1., 0., 1.]))"
+knapsack_n8_seed10,BranchAndBound,0.006391083006747067,"(13.0, array([-0.,  1., -0., -0., -0., -0.,  1.,  1.]))"
+knapsack_n8_seed10,GomoryCuttingPlane,0.0011702500050887465,"(13.0, array([0., 1., 0., 0., 0., 0., 1., 1.]))"
+knapsack_n8_seed11,BranchAndBound,0.009033374954015017,"(27.0, array([-0., -0., -0.,  1., -0.,  1.,  1.,  1.]))"
+knapsack_n8_seed11,GomoryCuttingPlane,0.03760904096998274,"(27.0, array([0., 0., 0., 1., 0., 1., 1., 1.]))"
+knapsack_n8_seed12,BranchAndBound,0.0135209999862127,"(20.0, array([-0., -0.,  1.,  1., -0., -0., -0.,  1.]))"
+knapsack_n8_seed12,GomoryCuttingPlane,0.003913249995093793,"(20.0, array([0., 0., 1., 1., 0., 0., 0., 1.]))"
+knapsack_n8_seed13,BranchAndBound,0.007764416979625821,"(24.0, array([-0.,  1., -0.,  1.,  1.,  1.,  1.,  1.]))"
+knapsack_n8_seed13,GomoryCuttingPlane,0.0006447089836001396,"(24.0, array([0., 1., 0., 1., 1., 1., 1., 1.]))"
+knapsack_n8_seed14,BranchAndBound,0.000361250014975667,"(32.0, array([ 0., -0.,  1.,  1.,  1.,  1.,  0.,  0.]))"
+knapsack_n8_seed14,GomoryCuttingPlane,0.00027020799461752176,"(32.0, array([0., 0., 1., 1., 1., 1., 0., 0.]))"
+knapsack_n8_seed15,BranchAndBound,0.01974466600222513,"(26.0, array([ 1., -0., -0., -0.,  1., -0.,  1.,  1.]))"
+knapsack_n8_seed15,GomoryCuttingPlane,0.005132832971867174,"(27.0, array([1., 1., 0., 0., 1., 0., 1., 1.]))"
+knapsack_n8_seed16,BranchAndBound,0.009814957971684635,"(10.0, array([ 1., -0., -0.,  1., -0., -0., -0., -0.]))"
+knapsack_n8_seed16,GomoryCuttingPlane,0.013071583001874387,"(10.0, array([1., 0., 0., 1., 0., 0., 0., 0.]))"
+knapsack_n8_seed17,BranchAndBound,0.004114333016332239,"(39.0, array([-0.,  1.,  1.,  1.,  1.,  1.,  1., -0.]))"
+knapsack_n8_seed17,GomoryCuttingPlane,0.00047745899064466357,"(39.0, array([0., 1., 1., 1., 1., 1., 1., 0.]))"
+knapsack_n8_seed18,BranchAndBound,0.01039345801109448,"(19.0, array([-0.,  1., -0.,  0.,  1., -0., -0.,  1.]))"
+knapsack_n8_seed18,GomoryCuttingPlane,0.008548000012524426,"(19.0, array([0., 1., 0., 0., 1., 0., 0., 1.]))"
+knapsack_n8_seed19,BranchAndBound,0.00799345801351592,"(37.0, array([ 1.,  0.,  1.,  1.,  1.,  0.,  1., -0.]))"
+knapsack_n8_seed19,GomoryCuttingPlane,0.0018309589941054583,"(37.0, array([0., 0., 1., 1., 1., 0., 1., 1.]))"
+knapsack_n9_seed00,BranchAndBound,0.014542624994646758,"(37.0, array([ 1.,  1.,  1., -0., -0.,  1.,  1.,  0.,  1.]))"
+knapsack_n9_seed00,GomoryCuttingPlane,0.008766459010075778,"(37.0, array([1., 1., 1., 0., 0., 1., 1., 0., 1.]))"
+knapsack_n9_seed01,BranchAndBound,0.025958042009733617,"(24.0, array([ 1.,  0.,  1.,  0., -0.,  1.,  1.,  0.,  0.]))"
+knapsack_n9_seed01,GomoryCuttingPlane,0.00030479097040370107,"(24.0, array([1., 0., 1., 0., 0., 1., 1., 0., 0.]))"
+knapsack_n9_seed02,BranchAndBound,0.02285570901585743,"(21.0, array([-0., -0.,  1.,  1.,  1., -0., -0., -0.,  1.]))"
+knapsack_n9_seed02,GomoryCuttingPlane,0.0023975420044735074,"(21.0, array([0., 0., 1., 1., 1., 0., 0., 0., 1.]))"
+knapsack_n9_seed03,BranchAndBound,0.0028306670137681067,"(25.0, array([0., 0., 1., 1., 0., 1., 1., 0., 1.]))"
+knapsack_n9_seed03,GomoryCuttingPlane,0.0010737919947132468,"(25.0, array([0., 0., 1., 1., 0., 1., 1., 0., 1.]))"
+knapsack_n9_seed04,BranchAndBound,0.011463499977253377,"(26.0, array([ 1.,  1.,  1., -0.,  1., -0., -0.,  1., -0.]))"
+knapsack_n9_seed04,GomoryCuttingPlane,0.04095233301632106,"(25.0, array([1., 0., 1., 0., 1., 0., 1., 1., 0.]))"
+knapsack_n9_seed05,BranchAndBound,0.0006048750365152955,"(12.0, array([ 0.,  0.,  0., -0.,  0.,  1.,  1.,  0.,  0.]))"
+knapsack_n9_seed05,GomoryCuttingPlane,0.0002347080153413117,"(12.0, array([0., 0., 0., 0., 0., 1., 1., 0., 0.]))"
+knapsack_n9_seed06,BranchAndBound,0.010456499992869794,"(23.0, array([0., 0., 1., 1., 0., 1., 0., 1., 0.]))"
+knapsack_n9_seed06,GomoryCuttingPlane,0.0028110420098528266,"(22.0, array([0., 1., 1., 1., 0., 0., 0., 1., 0.]))"
+knapsack_n9_seed07,BranchAndBound,0.009292749979067594,"(23.0, array([ 1., -0.,  1., -0.,  1., -0., -0., -0.,  1.]))"
+knapsack_n9_seed07,GomoryCuttingPlane,0.00040787499165162444,"(23.0, array([1., 0., 1., 0., 1., 0., 0., 0., 1.]))"
+knapsack_n9_seed08,BranchAndBound,0.00042916700476780534,"(22.0, array([ 1.,  1.,  1.,  1.,  0.,  1.,  0.,  1., -0.]))"
+knapsack_n9_seed08,GomoryCuttingPlane,0.0003912079846486449,"(22.0, array([1., 1., 1., 1., 0., 1., 0., 1., 0.]))"
+knapsack_n9_seed09,BranchAndBound,0.012967250018846244,"(28.0, array([-0.,  0.,  1.,  1.,  0.,  1.,  0.,  1.,  0.]))"
+knapsack_n9_seed09,GomoryCuttingPlane,0.042891542019788176,"(25.0, array([1., 0., 1., 1., 0., 0., 1., 0., 0.]))"
+knapsack_n9_seed10,BranchAndBound,0.01569016696885228,"(40.0, array([ 1.,  1., -0., -0., -0.,  1., -0.,  1.,  1.]))"
+knapsack_n9_seed10,GomoryCuttingPlane,0.001456499972846359,"(40.0, array([1., 1., 0., 0., 0., 1., 0., 1., 1.]))"
+knapsack_n9_seed11,BranchAndBound,0.00043566699605435133,"(26.0, array([ 0.,  1.,  1.,  1., -0.,  0.,  0.,  0.,  1.]))"
+knapsack_n9_seed11,GomoryCuttingPlane,0.00023408402921631932,"(26.0, array([0., 1., 1., 1., 0., 0., 0., 0., 1.]))"
+knapsack_n9_seed12,BranchAndBound,0.005395166983362287,"(37.0, array([ 0.,  1.,  0.,  1., -0.,  1.,  1.,  0.,  1.]))"
+knapsack_n9_seed12,GomoryCuttingPlane,0.03584008303005248,"(37.0, array([0., 1., 0., 1., 0., 1., 1., 0., 1.]))"
+knapsack_n9_seed13,BranchAndBound,0.013542082975618541,"(24.0, array([ 1.,  0., -0.,  0.,  1.,  1.,  1., -0.,  1.]))"
+knapsack_n9_seed13,GomoryCuttingPlane,0.0004939159844070673,"(24.0, array([1., 0., 0., 0., 1., 1., 1., 0., 1.]))"
+knapsack_n9_seed14,BranchAndBound,0.0011381250224076211,"(14.0, array([0., 0., 1., 0., 0., 0., 0., 0., 1.]))"
+knapsack_n9_seed14,GomoryCuttingPlane,0.00033466704189777374,"(14.0, array([0., 0., 1., 0., 0., 0., 0., 0., 1.]))"
+knapsack_n9_seed15,BranchAndBound,0.005003541999030858,"(16.0, array([ 1.,  0., -0.,  1.,  0.,  0.,  0.,  1.,  0.]))"
+knapsack_n9_seed15,GomoryCuttingPlane,0.08375741599593312,"(16.0, array([1., 0., 1., 1., 1., 0., 1., 0., 0.]))"
+knapsack_n9_seed16,BranchAndBound,0.003122291003819555,"(31.0, array([ 0., -0.,  1.,  0.,  1.,  0.,  1.,  1.,  1.]))"
+knapsack_n9_seed16,GomoryCuttingPlane,0.0008565419702790678,"(31.0, array([0., 1., 1., 1., 1., 0., 0., 0., 1.]))"
+knapsack_n9_seed17,BranchAndBound,0.010569792008027434,"(36.0, array([ 1.,  1., -0.,  1.,  1.,  1., -0.,  1., -0.]))"
+knapsack_n9_seed17,GomoryCuttingPlane,0.0007184169953688979,"(36.0, array([1., 1., 0., 1., 1., 1., 0., 1., 0.]))"
+knapsack_n9_seed18,BranchAndBound,0.009284041007049382,"(39.0, array([ 1.,  1.,  1.,  1., -0.,  0.,  1., -0.,  1.]))"
+knapsack_n9_seed18,GomoryCuttingPlane,0.00043987500248476863,"(39.0, array([1., 1., 1., 1., 0., 0., 1., 0., 1.]))"
+knapsack_n9_seed19,BranchAndBound,0.01943849999224767,"(24.0, array([ 1.,  1., -0., -0.,  1.,  1., -0., -0., -0.]))"
+knapsack_n9_seed19,GomoryCuttingPlane,0.0005050000036135316,"(24.0, array([1., 1., 0., 0., 1., 1., 0., 0., 0.]))"

@@ -48,15 +48,21 @@ class Simplex:
         # Find pivot column (most negative in the first row)
         pivot_col = np.argmin(self.tableau[0, :-1])
         if self.tableau[0, pivot_col] >= 0:
-            return False
-        col_value = np.where(self.tableau[1:, pivot_col] == 0, -1, self.tableau[1:, pivot_col])  # Avoid division by zero
+            return None, None
+        pivot_col_values = self.tableau[1:, pivot_col]
 
         # Find pivot row (minimum ratio test)
-        ratios = self.tableau[1:, -1] / col_value
-        ratios[ratios <= 0] = np.inf                # Ignore non-positive ratios
+        # Standard simplex ratio test: only consider positive denominators and ignore division by zero.
+        with np.errstate(divide='ignore', invalid='ignore'):
+            ratios = self.tableau[1:, -1] / pivot_col_values
+        
+        # Filter out negative and zero denominators
+        ratios[pivot_col_values <= 0] = np.inf
+
+        # Find the row with the minimum non-negative ratio
+        if np.all(np.isinf(ratios)):
+            raise ValueError("Problem is unbounded.")        
         pivot_row = np.argmin(ratios) + 1
-        if np.isinf(ratios[pivot_row - 1]):
-            raise ValueError("Problem is unbounded.")
         
         # Update basic variable index
         self.basic_index[pivot_row - 1] = pivot_col
@@ -77,18 +83,26 @@ class Simplex:
 
         # Check for negative right-hand side values
         if np.any(np.array(self.tableau[1:, -1]) < 0):
-            raise ValueError("Right-hand side values must be non-negative.")
+            raise ValueError("Initial tableau is not primal feasible. " \
+            "Use TwoPhaseSimplex for problems with negative right-hand side values.")
 
         # Perform the simplex algorithm
         while not self._is_optimal():
             pivot_row, pivot_col = self._get_pivot()
+            if pivot_row is None: # No pivot column found, break the loop
+                break
             self._pivot(pivot_row, pivot_col)
 
         # Extract the optimal solution and value
         rhs = self.tableau[1:, -1]
         optimal_value = self.tableau[0, -1]
-        optimal_solution = np.zeros(self.tableau.shape[1] - 1)
-        optimal_solution[self.basic_index] = rhs
+        # The size of the solution vector should be the number of original variables
+        optimal_solution = np.zeros(len(self.c))
+        
+        # Fill in the values for the original basic variables
+        for i, idx in enumerate(self.basic_index):
+            if idx < len(self.c):
+                optimal_solution[idx] = rhs[i]
 
         return optimal_solution, optimal_value
     

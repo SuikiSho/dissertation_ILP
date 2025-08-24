@@ -215,7 +215,7 @@ class SheraliAdams:
                 print("LP infeasible or error. Terminating.")
                 return None, None
             if self._is_int(sol):
-                print(f"Integral solution found at level {level}.")
+                # print(f"Integral solution found at level {level}.")
                 return sol[:size], obj
             if level >= max_l:
                 print(f"Reached max lifting level {level}.")

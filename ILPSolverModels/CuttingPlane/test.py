@@ -117,12 +117,31 @@ def _test6():
     print("Optimal Value:", opt_val)
     print("Finial tableau:", gomory.tableau)
 
+def _test7():
+    c = np.array([3., 3., 5., 9., 3.])
+    A_ub = np.array([
+        [6., 6., 4., 1., 2.],
+        [4., 1., 9., 2., 9.],
+        [8., 4., 4., 9., 7.]
+    ])
+    b_ub = np.array([9.5, 12.5, 16.])
+    A_eq = None
+    b_eq = None
+
+    gomory = GomoryCuttingPlane(c, A_ub, b_ub, A_eq, b_eq)
+    opt_sol, opt_val = gomory.solve()
+    print("Optimal Solution:", opt_sol)
+    print("Optimal Value:", opt_val)
+    print("Finial tableau:", gomory.tableau)
+
+
 if __name__ == "__main__":
     np.set_printoptions(precision=3, suppress=True)  # Set print options for better readability
 
-    # _test1()
-    # _test2()
-    # _test3()
-    # _test4()
-    # _test5()
+    _test1()
+    _test2()
+    _test3()
+    _test4()
+    _test5()
     _test6()
+    # _test7()
