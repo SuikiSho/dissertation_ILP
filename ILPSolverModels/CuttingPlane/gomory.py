@@ -7,7 +7,6 @@ def _frac(x: np.ndarray) -> np.ndarray:
     return x - np.floor(x)
 
 def _efficacy(a: np.ndarray, viol: float, eps: float = 1e-12) -> float:
-    # 经典效力指标：违背度 / ||a||
     return float(viol) / (np.linalg.norm(a) + eps)
 
 def _cos_sim(a: np.ndarray, b: np.ndarray, eps: float = 1e-12) -> float:

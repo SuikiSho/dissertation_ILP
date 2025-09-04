@@ -21,3 +21,6 @@ def show_case(npz_file: str, key_substr: str):
         print("b_ub:", b_ub)
     print("="*60)
     print(f"[INFO] Found {len(matches)} matches for '{key_substr}'.")
+
+if __name__ == "__main__":
+    show_case("cases/c_n2_10.npz", "seed01")
